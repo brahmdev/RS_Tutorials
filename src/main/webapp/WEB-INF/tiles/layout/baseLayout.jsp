@@ -25,7 +25,6 @@
 	<link href="${springCss}" rel="stylesheet" />
 	 -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css"
@@ -33,7 +32,10 @@
 <link rel="stylesheet" type="text/css" href="css/buttons.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/select.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/editor.bootstrap.css">
-
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap-year-calendar.css">	
 
 
 
@@ -53,7 +55,7 @@ var jQuery_1_1_3 = $.noConflict(true);
 
 <script src="js/respond.min.js"></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/bootstrap-year-calendar.js"></script>
 <script src="js/bootstrap-popover.js"></script>
 <script src="js/jquery.dataTables.js"></script>
