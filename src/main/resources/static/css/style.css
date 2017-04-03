@@ -4761,7 +4761,7 @@ Copyright (c) 2015 Daniel Eden
   min-width: 585px;
 }
 .dropdown-menu {
-  z-index: 9000;
+  z-index: 100001;
 }
 .ct-topBar {
   font-size: 12px;
@@ -8093,7 +8093,7 @@ body.boxed .ct-pageWrapper,
   width: 64px;
   height: 64px;
   font-size: 64px;
-  background: url("../images/preloader.gif") no-repeat;
+  background: url("../img/preloader.gif") no-repeat;
 }
 .ct-iconBox .ct-icon {
   margin: 0 auto;
