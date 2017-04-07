@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.devops</groupId>
-	<artifactId>dev</artifactId>
-	<name>Master_Calendar</name>
+	<artifactId>RS_Tutorials</artifactId>
+	<name>RS_Tutorials</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 
@@ -103,4 +103,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	<url>www.rstutorials.edu</url>
+	<description>RS Tutorials Website</description>
 </project>
