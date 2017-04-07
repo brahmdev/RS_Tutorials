@@ -4,105 +4,42 @@
 	</div>
 	<nav class="ct-menuMobile">
 		<ul class="ct-menuMobile-navbar">
-			<li class="dropdown active"><a>Home</a>
-				<ul class="dropdown-menu">
-					<li class="active"><a href="/">Home Page V1</a></li>
-					<li><a href="index2.html">Home Page V2</a></li>
-					<li><a href="index3.html">Home Page V3</a></li>
-					<li><a href="index4.html">Home Page V4</a></li>
-					<li><a href="index5.html">Home Page V5</a></li>
-					<li><a href="index6.html">Home Page V6</a></li>
-					<li><a href="index7.html">Home Page V7</a></li>
-					<li><a href="index8.html">Home Page V8</a></li>
-					<li><a href="index9.html">Home Page V9</a></li>
-					<li><a href="index10.html">Home Page V10</a></li>
-					<li><a href="index11.html">Home Page V11</a></li>
-					<li><a href="index12.html">Home Page V12</a></li>
-					<li><a href="index13.html">Home Page V13</a></li>
-					<li><a href="index14.html">Home Page V14</a></li>
-					<li><a href="index15.html">Home Page V15</a></li>
-					<li><a href="index16.html">Home Page V16</a></li>
-					<li><a href="index17.html">Home Page V17</a></li>
-					<li><a href="index18.html">Home Page V18</a></li>
-					<li><a href="onepager.html">Onepager</a></li>
-				</ul></li>
+			<li class="dropdown active"><a href="/">Home</a>
+
 			<li class="dropdown"><a>Courses</a>
 				<ul class="dropdown-menu">
-					<li><a href="course-single.html">Single Course V1</a></li>
-					<li><a href="course-single2.html">Single Course V2</a></li>
-					<li><a href="course-single3.html">Single Course V3</a></li>
-					<li><a href="course-single4.html">Single Course V4</a></li>
-					<li><a href="course-single5.html">Single Course V5</a></li>
-					<li><a href="course-single6.html">Single Course V6</a></li>
-					<li><a href="course-single7.html">Single Course V7</a></li>
-					<li><a href="course-single8.html">Single Course V8</a></li>
-					<li><a href="course-single9.html">Single Course V9</a></li>
-					<li><a href="courses-listing.html">List of Courses -
-							inline</a></li>
-					<li><a href="courses-listing2.html">List of Courses -
-							thumbnails</a></li>
-					<li><a href="courses-listing3.html">List of Courses -
-							without sidebar</a></li>
-				</ul></li>
-			<li class="dropdown"><a>Pages</a>
+					<li><a href="course-single.html">School</a></li>
+					<li><a href="course-single2.html">College</a></li>
+					<li><a href="course-single3.html">Entrance Exam</a></li>
+					<li><a href="course-single4.html">IT Courses</a></li>
+				</ul>
+			<li class="dropdown"><a>Admission</a>
 				<ul class="dropdown-menu">
-					<li><a href="members.html">List of Members</a> <a
-						href="member-single.html">Single Member V1</a> <a
-						href="member-single2.html">Single Member V2</a> <a
-						href="blog.html">Blog V1</a> <a href="blog2.html">Blog V2</a> <a
-						href="blog-single.html">Blog Single V1</a> <a
-						href="blog-single2.html">Blog Single V2</a> <a href="contact.do">Contact
-							V1</a> <a href="contact2.html">Contact V2</a> <a href="404-v1.html">404
-							V1</a> <a href="404-v2.html">404 V2</a> <a href="404-v3.html">404
-							V3</a> <a href="gallery.html">Gallery V1</a> <a href="gallery2.html">Gallery
-							V2</a> <a href="gallery3.html">Gallery V3</a> <a href="gallery4.html">Gallery
-							V4</a> <a href="gallery5.html">Gallery V5</a></li>
-				</ul></li>
-			<li class="dropdown"><a>Features</a>
+					<li><a href="members.html">Admission Process</a></li> 
+					<li><a href="member-single.html">Admission	Form</a></li>
+				</ul>
+			<li class="dropdown"><a>Results</a>
 				<ul class="dropdown-menu">
-					<li><a href="features-grid.html"><i class="fa fa-fw fa-th"></i>
-							Grid System</a></li>
-					<li><a href="features-typography.html"><i
-							class="fa fa-fw fa-font"></i> Typography</a></li>
-					<li><a href="features-buttons.html"><i
-							class="fa fa-fw fa-link"></i> Buttons</a></li>
-					<li><a href="features-forms.html"><i
-							class="fa fa-fw fa-align-justify"></i> Forms</a></li>
-					<li><a href="features-tables.html"><i
-							class="fa fa-fw fa-table"></i> Tables</a></li>
-					<li><a href="features-sliders.html"><i
-							class="fa fa-fw fa-navicon"></i> Sliders</a></li>
-					<li><a href="features-pricetables.html"><i
-							class="fa fa-fw fa-money"></i> Pricing Tables</a></li>
-					<li><a href="features-iconboxes.html"><i
-							class="fa fa-fw fa-th-large"></i> Icon Boxes</a></li>
-					<li><a href="features-personboxes.html"><i
-							class="fa fa-fw fa-users"></i> Person Boxes</a></li>
-					<li><a href="features-counters.html"><i
-							class="fa fa-fw fa-plus"></i> Counters</a></li>
-					<li><a href="features-toggable.html"><i
-							class="fa fa-fw fa-toggle-on"></i> Toggables</a></li>
-					<li><a href="features-m-sections.html"><i
-							class="fa fa-fw fa-play"></i> Media Sections</a></li>
-					<li><a href="features-charts.html"><i
-							class="fa fa-fw fa-area-chart"></i> Charts</a></li>
-					<li><a href="features-p-bars.html"><i
-							class="fa fa-fw fa-bars"></i> Progress Bars</a></li>
-					<li><a href="features-p-icons.html"><i
-							class="fa fa-fw fa-star-half-full"></i> Progress Icons</a></li>
-					<li><a href="features-lists.html"><i
-							class="fa fa-fw fa-list"></i> Lists Simple</a></li>
-					<li><a href="features-lists2.html"><i
-							class="fa fa-fw fa-list"></i> Lists Icons</a></li>
-					<li><a href="features-developers.html"><i
-							class="fa fa-fw fa-code"></i> For developers</a></li>
-				</ul></li>
-			<li class="dropdown"><a href="contact.do">Contact</a></li>
-
+					<li><a href="#">Hall Of Fame</a></li>
+					<li><a href="#">Testimonials</a></li>
+				</ul>
+			<li class="dropdown"><a>Management</a>
+				<ul class="dropdown-menu">
+					<li><a href="calendar.do">Event</a></li>
+					<li><a href="calendar.do">Student</a></li>
+					<li><a href="calendar.do">Staff</a></li>
+					<li><a href="calendar.do">Attendance</a></li>
+				</ul>
+			</li>
+			
 			<li class="dropdown"><a>Admin</a>
 				<ul class="dropdown-menu">
-					<li><a href="calendar.do">Event Management</a></li>
-				</ul></li>
+					<li><a href="calendar.do">Roles</a></li>
+					<li><a href="calendar.do">Finance</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown"><a href="contact.do">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -144,164 +81,45 @@
 				</div>
 				<div class="ct-navbar--fluid pull-right">
 					<ul class="nav navbar-nav ct-navbar--fadeInUp">
-						<li class="dropdown yamm-fw active"><a href="/">Home</a>
+						<li class="dropdown active"><a href="/">Home</a></li>
+						<li class="dropdown"><a href="/">Courses</a>
 							<ul class="dropdown-menu">
-								<li>
-									<div class="yamm-content">
-										<div class="row">
-											<div class="col-sm-3">
-												<a class="active" href="/">Home Page V1</a> <a
-													href="index2.html">Home Page V2</a> <a href="index3.html">Home
-													Page V3</a> <a href="index4.html">Home Page V4</a> <a
-													href="index5.html">Home Page V5</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="index6.html">Home Page V6</a> <a href="index7.html">Home
-													Page V7</a> <a href="index8.html">Home Page V8</a> <a
-													href="index9.html">Home Page V9</a> <a href="index10.html">Home
-													Page V10</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="index11.html">Home Page V11</a> <a
-													href="index12.html">Home Page V12</a> <a
-													href="index13.html">Home Page V13</a> <a
-													href="index14.html">Home Page V14</a> <a
-													href="onepager.html">Onepager</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="index15.html">Home Page V15</a> <a
-													href="index16.html">Home Page V16</a> <a
-													href="index17.html">Home Page V17</a> <a
-													href="index18.html">Home Page V18</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul></li>
-						<li class="dropdown yamm-fw"><a href="/">Courses</a>
-							<ul class="dropdown-menu">
-								<li>
-									<div class="yamm-content">
-										<div class="row">
-											<div class="col-sm-4">
-												<a href="courses-listing.html">List of Courses - inline</a>
-												<a href="course-single.html">Single Course V1</a> <a
-													href="course-single2.html">Single Course V2</a> <a
-													href="course-single3.html">Single Course V3</a>
-											</div>
-											<div class="col-sm-4">
-												<a href="courses-listing2.html">List of Courses -
-													thumbnails</a> <a href="course-single4.html">Single Course
-													V4</a> <a href="course-single5.html">Single Course V5</a> <a
-													href="course-single6.html">Single Course V6</a>
-											</div>
-											<div class="col-sm-4">
-												<a href="courses-listing3.html">List of Courses -
-													without sidebar</a> <a href="course-single7.html">Single
-													Course V7</a> <a href="course-single8.html">Single Course
-													V8</a> <a href="course-single9.html">Single Course V9</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul></li>
-						<li class="dropdown yamm-fw"><a href="/">Pages</a>
-							<ul class="dropdown-menu">
-								<li>
-									<div class="yamm-content">
-										<div class="row">
-											<div class="col-sm-3">
-												<a href="members.html">List of Members</a> <a
-													href="member-single.html">Single Member V1</a> <a
-													href="member-single2.html">Single Member V2</a> <a
-													href="gallery.html">Gallery V1</a> <a href="gallery5.html">Gallery
-													V5</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="blog.html">Blog V1</a> <a href="blog2.html">Blog
-													V2</a> <a href="blog-single.html">Blog Single V1</a> <a
-													href="gallery2.html">Gallery V2</a> <a
-													href="university-search.html">Our Universities</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="blog-single2.html">Blog Single V2</a> <a
-													href="contact.do">Contact V1</a> <a href="contact2.html">Contact
-													V2</a> <a href="gallery3.html">Gallery V3</a>
-											</div>
-											<div class="col-sm-3">
-												<a href="404-v1.html">404 V1</a> <a href="404-v2.html">404
-													V2</a> <a href="404-v3.html">404 V3</a> <a href="gallery4.html">Gallery
-													V4</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul></li>
-						<li class="dropdown yamm-fw"><a
-							href="features-typography.html">Features</a>
-							<ul class="dropdown-menu">
-								<li>
-									<div class="yamm-content">
-										<div class="row">
-											<div class="col-sm-4">
-												<ul class="list-unstyled">
-													<li><a href="features-grid.html"><i
-															class="fa fa-fw fa-th"></i> Grid System</a></li>
-													<li><a href="features-typography.html"><i
-															class="fa fa-fw fa-font"></i> Typography</a></li>
-													<li><a href="features-buttons.html"><i
-															class="fa fa-fw fa-link"></i> Buttons</a></li>
-													<li><a href="features-forms.html"><i
-															class="fa fa-fw fa-align-justify"></i> Forms</a></li>
-													<li><a href="features-tables.html"><i
-															class="fa fa-fw fa-table"></i> Tables</a></li>
-													<li><a href="features-sliders.html"><i
-															class="fa fa-fw fa-navicon"></i> Sliders</a></li>
-												</ul>
-											</div>
-											<div class="col-sm-4">
-												<ul class="list-unstyled">
-													<li><a href="features-pricetables.html"><i
-															class="fa fa-fw fa-money"></i> Pricing Tables</a></li>
-													<li><a href="features-iconboxes.html"><i
-															class="fa fa-fw fa-th-large"></i> Icon Boxes</a></li>
-													<li><a href="features-personboxes.html"><i
-															class="fa fa-fw fa-users"></i> Person Boxes</a></li>
-													<li><a href="features-counters.html"><i
-															class="fa fa-fw fa-plus"></i> Counters</a></li>
-													<li><a href="features-toggable.html"><i
-															class="fa fa-fw fa-toggle-on"></i> Toggables</a></li>
-													<li><a href="features-m-sections.html"><i
-															class="fa fa-fw fa-play"></i> Media Sections</a></li>
-												</ul>
-											</div>
-											<div class="col-sm-4">
-												<ul class="list-unstyled">
-													<li><a href="features-charts.html"><i
-															class="fa fa-fw fa-area-chart"></i> Charts</a></li>
-													<li><a href="features-p-bars.html"><i
-															class="fa fa-fw fa-bars"></i> Progress Bars</a></li>
-													<li><a href="features-p-icons.html"><i
-															class="fa fa-fw fa-star-half-full"></i> Progress Icons</a></li>
-													<li><a href="features-lists.html"><i
-															class="fa fa-fw fa-list"></i> Lists Simple</a></li>
-													<li><a href="features-lists2.html"><i
-															class="fa fa-fw fa-list"></i> Lists Icons</a></li>
-													<li><a href="features-developers.html"><i
-															class="fa fa-fw fa-code"></i> For developers</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul></li>
-						<li class="dropdown"><a href="contact.do">Contact</a></li>
-
-						<li class="dropdown"><a>Admin</a>
-							<ul class="dropdown-menu">
-								<li><a href="calendar.do">Event Management</a></li>
+								<li><a href="courses-listing.html">School</a></li>
+								<li><a href="course-single.html">College</a> </li>
+								<li><a href="course-single2.html">Entrace Exam</a></li>
+								<li><a href="course-single3.html">IT Course</a></li>
+							</ul>
+						<li class="dropdown"><a>Admission</a>
+							<ul class="dropdown-menu">		
+								<li><a href="members.html">Admission Process</a></li>
+								<li><a href="member-single.html">Admission Form</a></li>
 							</ul>
 						</li>
+								
+						<li class="dropdown"><a>Results</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Hall Of Fame</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown"><a>Management</a>
+							<ul class="dropdown-menu">
+								<li><a href="calendar.do">Event</a></li>
+								<li><a href="calendar.do">Student</a></li>
+								<li><a href="calendar.do">Staff</a></li>
+								<li><a href="calendar.do">Attendance</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown"><a>Admin</a>
+							<ul class="dropdown-menu">
+								<li><a href="calendar.do">Roles</a></li>
+								<li><a href="calendar.do">Finance</a></li>
+							</ul>
+						</li>
+						
+						<li class="dropdown"><a href="contact.do">Contact</a></li>
 					</ul>
 
 				</div>
