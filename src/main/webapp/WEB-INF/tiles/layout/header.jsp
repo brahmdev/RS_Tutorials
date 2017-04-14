@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+
 <body class="cssAnimate ct-headroom--scrollUpMenu">
 	<div class="ct-preloader">
 		<div class="ct-preloader-content"></div>
@@ -6,13 +9,7 @@
 		<ul class="ct-menuMobile-navbar">
 			<li class="dropdown active"><a href="/">Home</a>
 
-			<li class="dropdown"><a>Courses</a>
-				<ul class="dropdown-menu">
-					<li><a href="course-single.html">School</a></li>
-					<li><a href="course-single2.html">College</a></li>
-					<li><a href="course-single3.html">Entrance Exam</a></li>
-					<li><a href="course-single4.html">IT Courses</a></li>
-				</ul>
+			<li class="dropdown"><a href="courses.do">Courses</a></li>
 			<li class="dropdown"><a>Admission</a>
 				<ul class="dropdown-menu">
 					<li><a href="members.html">Admission Process</a></li> 
@@ -23,12 +20,14 @@
 					<li><a href="#">Hall Of Fame</a></li>
 					<li><a href="#">Testimonials</a></li>
 				</ul>
+			</li>
+			<sec:authorize access="hasRole('ROLE_ADMIN')">
 			<li class="dropdown"><a>Management</a>
 				<ul class="dropdown-menu">
-					<li><a href="calendar.do">Event</a></li>
-					<li><a href="calendar.do">Student</a></li>
-					<li><a href="calendar.do">Staff</a></li>
-					<li><a href="calendar.do">Attendance</a></li>
+					<li><a href="admin/calendar.do">Event</a></li>
+					<li><a href="admin/calendar.do">Student</a></li>
+					<li><a href="admin/calendar.do">Staff</a></li>
+					<li><a href="admin/calendar.do">Attendance</a></li>
 				</ul>
 			</li>
 			
@@ -38,7 +37,14 @@
 					<li><a href="calendar.do">Finance</a></li>
 				</ul>
 			</li>
-			
+			</sec:authorize>
+			<li class="dropdown"><a>About Us</a>
+				<ul class="dropdown-menu">
+					<li><a href="calendar.do">Salient Features</a></li>
+					<li><a href="calendar.do">Mission &amp; Vision</a></li>
+					<li><a href="calendar.do">Message from Founder(s)</a></li>
+				</ul>
+			</li>
 			<li class="dropdown"><a href="contact.do">Contact</a></li>
 		</ul>
 	</nav>
@@ -52,13 +58,19 @@
 					class="icon-bar"></span>
 			</button>
 		</div>
+		
 		<div class="ct-topBar text-center">
 			<div class="container">
 				<ul class="ct-panel--user list-inline text-uppercase pull-left">
-					<li><a href="#" class="ct-js-login">login<i
-							class="fa fa-lock"></i></a></li>
-					<li><a href="#" class="ct-js-signup">sign up<i
-							class="fa fa-user"></i></a></li>
+					<sec:authorize access="!isAuthenticated()">
+						<li><a href="login" class="ct-js-login">login<i
+								class="fa fa-lock"></i></a></li>
+						<li><a href="login" class="ct-js-signup">sign up<i
+								class="fa fa-user"></i></a></li>
+					</sec:authorize>
+					<sec:authorize access="isAuthenticated()">
+						<li>Welcome <b><c:out value="${pageContext.request.remoteUser}"></c:out></b></li>
+					</sec:authorize>
 				</ul>
 				<div class="ct-widget--group pull-right">
 					<ul class="ct-widget--socials list-inline text-uppercase">
@@ -68,11 +80,21 @@
 								class="fa fa-twitter"></i></a></li>
 						<li><a href="http://www.createit.pl/"><i
 								class="fa fa-wordpress"></i></a></li>
+					<sec:authorize access="isAuthenticated()">
+					<li>
+						<form id="logoutForm" action="/logout" method="post">
+							<input
+								type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+							<a href="#" onclick="document.getElementById('logoutForm').submit();"><i class="fa fa-sign-out"></i></a></li>
+						</form>								 
+					
+					</sec:authorize>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
+		
 		<nav class="navbar navbar-default navbar-fixed-top yamm "
 			data-heighttopbar="60px" data-startnavbar="0">
 			<div class="container">
@@ -82,13 +104,7 @@
 				<div class="ct-navbar--fluid pull-right">
 					<ul class="nav navbar-nav ct-navbar--fadeInUp">
 						<li class="dropdown active"><a href="/">Home</a></li>
-						<li class="dropdown"><a href="/">Courses</a>
-							<ul class="dropdown-menu">
-								<li><a href="courses-listing.html">School</a></li>
-								<li><a href="course-single.html">College</a> </li>
-								<li><a href="course-single2.html">Entrace Exam</a></li>
-								<li><a href="course-single3.html">IT Course</a></li>
-							</ul>
+						<li class="dropdown"><a href="/courses.do">Courses</a></li>
 						<li class="dropdown"><a>Admission</a>
 							<ul class="dropdown-menu">		
 								<li><a href="members.html">Admission Process</a></li>
@@ -102,7 +118,7 @@
 								<li><a href="#">Testimonials</a></li>
 							</ul>
 						</li>
-						
+						<sec:authorize access="hasRole('ROLE_ADMIN')">
 						<li class="dropdown"><a>Management</a>
 							<ul class="dropdown-menu">
 								<li><a href="calendar.do">Event</a></li>
@@ -111,14 +127,20 @@
 								<li><a href="calendar.do">Attendance</a></li>
 							</ul>
 						</li>
-						
 						<li class="dropdown"><a>Admin</a>
 							<ul class="dropdown-menu">
 								<li><a href="calendar.do">Roles</a></li>
 								<li><a href="calendar.do">Finance</a></li>
 							</ul>
 						</li>
-						
+						</sec:authorize>
+						<li class="dropdown"><a>About Us</a>
+							<ul class="dropdown-menu">
+								<li><a href="calendar.do">Salient Features</a></li>
+								<li><a href="calendar.do">Mission &amp; Vision</a></li>
+								<li><a href="calendar.do">Message from Founder(s)</a></li>
+							</ul>
+						</li>
 						<li class="dropdown"><a href="contact.do">Contact</a></li>
 					</ul>
 
@@ -154,15 +176,18 @@
 						<h3 class="modal-title text-uppercase">Login</h3>
 					</div>
 					<div class="modal-body">
-						<form class="ct-u-paddingBottom100">
+						<form class="ct-u-paddingBottom100" name="loginForm" 
+							action="/login" method='POST'>
 							<div class="form-group ct-u-marginBottom50">
-								<input placeholder="E-mail" type="text" required=""
-									name="field[]"
+								<input placeholder="E-mail" type="text" required
 									class="form-control ct-input--type1 input-hg ct-u-marginBottom50"
-									title="Login"> <input placeholder="Password"
-									type="text" required="" name="field[]"
+									title="Login" name='username'> 
+								<input placeholder="Password"
+									type="password" required
 									class="form-control ct-input--type1 input-hg ct-u-marginBottom50"
-									title="Password">
+									title="Password" name='password'>
+								<input type="hidden" name="${_csrf.parameterName}"
+									value="${_csrf.token}" />
 								<div class="ct-checbox--custom">
 									<input id="remember" type="checkbox" name="remember"
 										value="remember"> <label for="remember">remember
@@ -180,6 +205,7 @@
 										Register Now ?</a>
 								</div>
 							</div>
+							
 						</form>
 					</div>
 				</div>
