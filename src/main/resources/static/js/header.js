@@ -1047,17 +1047,19 @@ $(document).ready(function () {
     })
 
     // Log in & Sign up modal
-    $('.ct-js-login').on("click", function () {
-    	debugger;
+  /*  $('.ct-js-login').on("click", function (event) {
+    	//event.preventDefault();
+    	
         $(".ct-js-modal-login").modal({
             show: true
         })
+        
     });
 
     $('.ct-js-signup').on("click", function () {
         $(".ct-js-modal-signup").modal({
             show: true
         })
-    });
+    });*/
 
 });
