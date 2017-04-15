@@ -474,11 +474,11 @@
 							<div class="ct-productBox">
 								<a href="#">
 									<div class="ct-productImage">
-										<img src="img/entrance_MHT-CET.jpg" alt="CET">
+										<img src="img/entrance_jee_iit.jpg" alt="IIT-JEE">
 									</div>
 									<div class="ct-productDescription">
-										<h5 class="ct-fw-600 ct-u-marginBottom10">MHT-CET</h5>
-										<span>MHT-CET Courses.</span>
+										<h5 class="ct-fw-600 ct-u-marginBottom10">IIT-JEE</h5>
+										<span>IIT-JEE Entrance Exam.</span>
 									</div>
 								</a>
 								<div class="ct-productMeta">
@@ -487,7 +487,7 @@
 											<div class="starrr" data-rating='4'></div>
 										</div>
 										<div class="ct-u-displayTableCell">
-											<span class="ct-u-colorMotive">MHT-CET</span>
+											<span class="ct-u-colorMotive">IIT-JEE</span>
 										</div>
 										<a href="#">
 											<div class="ct-u-displayTableCell">
@@ -502,38 +502,10 @@
 							<div class="ct-productBox">
 								<a href="#">
 									<div class="ct-productImage">
-										<img src="img/entrance_JEE.jpg" alt="JEE">
+										<img src="img/entrance_neet.jpg" alt="NEET">
 									</div>
 									<div class="ct-productDescription">
-										<h5 class="ct-fw-600 ct-u-marginBottom10">JEE</h5>
-										<span>JEE Entrance Exam.</span>
-									</div>
-								</a>
-								<div class="ct-productMeta">
-									<div class="ct-u-displayTableVertical">
-										<div class="ct-u-displayTableCell">
-											<div class="starrr" data-rating='4'></div>
-										</div>
-										<div class="ct-u-displayTableCell">
-											<span class="ct-u-colorMotive">JEE</span>
-										</div>
-										<a href="#">
-											<div class="ct-u-displayTableCell">
-												15 <i class="fa fa-user"></i>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="ct-productBox">
-								<a href="#">
-									<div class="ct-productImage">
-										<img src="img/entrance_IIT.jpg" alt="IIT">
-									</div>
-									<div class="ct-productDescription">
-										<h5 class="ct-fw-600 ct-u-marginBottom10">IIT</h5>
+										<h5 class="ct-fw-600 ct-u-marginBottom10">NEET</h5>
 										<span>IIT Entrance Exam</span>
 									</div>
 								</a>
@@ -543,35 +515,7 @@
 											<div class="starrr" data-rating='4'></div>
 										</div>
 										<div class="ct-u-displayTableCell">
-											<span class="ct-u-colorMotive">IIT</span>
-										</div>
-										<a href="#">
-											<div class="ct-u-displayTableCell">
-												15 <i class="fa fa-user"></i>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-3">
-							<div class="ct-productBox">
-								<a href="#">
-									<div class="ct-productImage">
-										<img src="img/entrance_PMT.jpg" alt="PMT">
-									</div>
-									<div class="ct-productDescription">
-										<h5 class="ct-fw-600 ct-u-marginBottom10">PMT</h5>
-										<span>PMT Entrance Exam.</span>
-									</div>
-								</a>
-								<div class="ct-productMeta">
-									<div class="ct-u-displayTableVertical">
-										<div class="ct-u-displayTableCell">
-											<div class="starrr" data-rating='4'></div>
-										</div>
-										<div class="ct-u-displayTableCell">
-											<span class="ct-u-colorMotive">PMT</span>
+											<span class="ct-u-colorMotive">NEET</span>
 										</div>
 										<a href="#">
 											<div class="ct-u-displayTableCell">
