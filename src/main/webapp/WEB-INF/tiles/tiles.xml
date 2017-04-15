@@ -45,5 +45,10 @@
 		<put-attribute name="title" value="Sign-In/Sign-Up" />
 		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
 	</definition>
+	
+	<definition name="courses" extends="base.definition">
+		<put-attribute name="title" value="Courses" />
+		<put-attribute name="body" value="/WEB-INF/views/courses.jsp" />
+	</definition>
 
 </tiles-definitions>
