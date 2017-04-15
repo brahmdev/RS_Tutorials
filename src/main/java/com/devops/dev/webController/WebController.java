@@ -83,5 +83,11 @@ public class WebController {
 		
 		return "login";
 	}
-
+	
+	@RequestMapping(value = "/courses", method = RequestMethod.GET)
+	public String courses(Locale locale, Model model) {
+		logger.info("Welcome on courses Page! The client locale is {}.", locale);
+		
+		return "courses";
+	}
 }
