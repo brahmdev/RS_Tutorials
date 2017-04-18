@@ -28,13 +28,13 @@
 										<div class="ct-divider--dark ct-u-marginBoth30"></div>
 										<ul class="list-unstyled ct-fw-400">
 											<li><a href="#" id="school"><i
-													class="fa fa-angle-right"></i>School (2)</a></li>
+													class="fa fa-angle-right"></i>School</a></li>
 											<li><a href="#" id="college"><i
-													class="fa fa-angle-right"></i>College (19)</a></li>
+													class="fa fa-angle-right"></i>College</a></li>
 											<li><a href="#" id="entrance"><i
-													class="fa fa-angle-right"></i>Entrance Exam (25)</a></li>
+													class="fa fa-angle-right"></i>Entrance Exam</a></li>
 											<li><a href="#" id="it"><i class="fa fa-angle-right"></i>Information
-													Technologies (19)</a></li>
+													Technologies/Computer Science</a></li>
 										</ul>
 									</div>
 								</section>
@@ -45,6 +45,8 @@
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-md-12" id="school_course">
+							<h4 class="text-uppercase ct-u-textNormal ct-fw-900">School Courses Detail</h4>
+							<hr>
 							<div class="panel-group panel-groupTransparent" id="accordion2"
 								role="tablist" aria-multiselectable="true">
 								<div class="panel panel-default">
@@ -248,21 +250,23 @@
 							</div>
 						</div>
 						<div class="col-md-12" id="college_course">
-							<div class="panel-group panel-groupTransparent" id="accordion2"
+						<h4 class="text-uppercase ct-u-textNormal ct-fw-900">College Courses Detail</h4>
+						<hr>
+							<div class="panel-group panel-groupTransparent" id="accordion3"
 								role="tablist" aria-multiselectable="true">
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-heading" role="tab" id="headingSix">
 										<h4 class="panel-title">
 											<a role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseOne"
-												aria-expanded="false" aria-controls="collapseOne"
+												data-parent="#accordion3" href="#collapseSix"
+												aria-expanded="false" aria-controls="collapseSix"
 												class="collapsed"> <i class="fa fa-list-alt"></i>
 												College Batches
 											</a>
 										</h4>
 									</div>
-									<div id="collapseOne" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingOne"
+									<div id="collapseSix" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingSix"
 										aria-expanded="false" style="height: 0px;">
 										<div class="panel-body">
 											<div class="list-group">
@@ -296,18 +300,18 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-heading" role="tab" id="headingSeven">
 										<h4 class="panel-title">
 											<a role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseTwo"
-												aria-expanded="false" aria-controls="collapseTwo"
+												data-parent="#accordion3" href="#collapseSeven"
+												aria-expanded="false" aria-controls="collapseSeven"
 												class="collapsed"> <i class="fa fa-list-alt"></i>
 												Subjects Offered
 											</a>
 										</h4>
 									</div>
-									<div id="collapseTwo" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingTwo"
+									<div id="collapseSeven" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingSeven"
 										aria-expanded="false" style="height: 0px;">
 										<div class="panel-body">
 											<div class="col-md-12">
@@ -338,17 +342,17 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-heading" role="tab" id="headingEight">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseThree"
-												aria-expanded="false" aria-controls="collapseThree"> <i
+												data-parent="#accordion3" href="#collapseEight"
+												aria-expanded="false" aria-controls="collapseEight"> <i
 												class="fa fa-files-o"></i> Test Series &amp; Schedule
 											</a>
 										</h4>
 									</div>
-									<div id="collapseThree" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingThree"
+									<div id="collapseEight" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingEight"
 										aria-expanded="false" style="height: 0px;">
 										<div class="panel-body">
 											<div class="table-responsive">
@@ -366,11 +370,11 @@
 														</tr>
 														<tr>
 															<td>Unit Test</td>
-															<td>Unit Test before the school unit test</td>
+															<td>Unit Test before the College Exam</td>
 														</tr>
 														<tr>
 															<td>Final Exam</td>
-															<td>Final Exam before the school final exams</td>
+															<td>Final Exam before the College final exams</td>
 														</tr>
 													</tbody>
 												</table>
@@ -379,17 +383,17 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFour">
+									<div class="panel-heading" role="tab" id="headingNine">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseFour"
-												aria-expanded="false" aria-controls="collapseFour"> <i
+												data-parent="#accordion3" href="#collapseNine"
+												aria-expanded="false" aria-controls="collapseNine"> <i
 												class="fa fa-desktop"></i> School Fees Structure
 											</a>
 										</h4>
 									</div>
-									<div id="collapseFour" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingFour"
+									<div id="collapseNine" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingNine"
 										aria-expanded="false">
 										<div class="panel-body">
 											<div class="table-responsive">
@@ -419,17 +423,17 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFive">
+									<div class="panel-heading" role="tab" id="headingTen">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseFive"
-												aria-expanded="false" aria-controls="collapseFive"> <i
+												data-parent="#accordion3" href="#collapseTen"
+												aria-expanded="false" aria-controls="collapseTen"> <i
 												class="fa fa-desktop"></i> Counseling & Motivation
 											</a>
 										</h4>
 									</div>
-									<div id="collapseFive" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingFive"
+									<div id="collapseTen" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingTen"
 										aria-expanded="false">
 										<div class="panel-body">Along with intensive academic
 											coaching. It is also very important and essential to make the
@@ -441,20 +445,22 @@
 							</div>
 						</div>
 						<div class="col-md-12" id="entrance_course">
-							<div class="panel-group panel-groupTransparent" id="accordion2"
+							<h4 class="text-uppercase ct-u-textNormal ct-fw-900">Entrance Exam Courses Detail</h4>
+							<hr>
+							<div class="panel-group panel-groupTransparent" id="accordion4"
 								role="tablist" aria-multiselectable="true">
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFour">
+									<div class="panel-heading" role="tab" id="headingEleven">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseFour"
-												aria-expanded="false" aria-controls="collapseFour"> <i
+												data-parent="#accordion4" href="#collapseEleven"
+												aria-expanded="false" aria-controls="collapseEleven"> <i
 												class="fa fa-desktop"></i> School Fees Structure
 											</a>
 										</h4>
 									</div>
-									<div id="collapseFour" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingFour"
+									<div id="collapseEleven" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingEleven"
 										aria-expanded="false">
 										<div class="panel-body">
 											<div class="table-responsive">
@@ -481,17 +487,17 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFive">
+									<div class="panel-heading" role="tab" id="headingTwelve">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseFive"
-												aria-expanded="false" aria-controls="collapseFive"> <i
+												data-parent="#accordion4" href="#collapseTwelve"
+												aria-expanded="false" aria-controls="collapseTwelve"> <i
 												class="fa fa-desktop"></i> Counseling & Motivation
 											</a>
 										</h4>
 									</div>
-									<div id="collapseFive" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingFive"
+									<div id="collapseTwelve" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingTwelve"
 										aria-expanded="false">
 										<div class="panel-body">Along with intensive academic
 											coaching. It is also very important and essential to make the
@@ -503,22 +509,24 @@
 							</div>
 						</div>
 						<div class="col-md-12" id="it_course">
-							<div class="panel-group panel-groupTransparent" id="accordion2"
+							<h4 class="text-uppercase ct-u-textNormal ct-fw-900">IT/Computer Science Courses Detail</h4>
+							<hr>
+							<div class="panel-group panel-groupTransparent" id="accordion5"
 								role="tablist" aria-multiselectable="true">
 
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-heading" role="tab" id="headingThirteen">
 										<h4 class="panel-title">
 											<a role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseTwo"
-												aria-expanded="false" aria-controls="collapseTwo"
+												data-parent="#accordion5" href="#collapseThirteen"
+												aria-expanded="false" aria-controls="collapseThirteen"
 												class="collapsed"> <i class="fa fa-list-alt"></i>
 												Subjects Offered
 											</a>
 										</h4>
 									</div>
-									<div id="collapseTwo" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingTwo"
+									<div id="collapseThirteen" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingThirteen"
 										aria-expanded="false" style="height: 0px;">
 										<div class="panel-body">
 											<div class="col-md-12">
@@ -565,17 +573,17 @@
 									</div>
 								</div>
 								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingFour">
+									<div class="panel-heading" role="tab" id="headingFourteen">
 										<h4 class="panel-title">
 											<a class="collapsed" role="button" data-toggle="collapse"
-												data-parent="#accordion2" href="#collapseFour"
-												aria-expanded="false" aria-controls="collapseFour"> <i
+												data-parent="#accordion5" href="#collapseFourteen"
+												aria-expanded="false" aria-controls="collapseFourteen"> <i
 												class="fa fa-desktop"></i> School Fees Structure
 											</a>
 										</h4>
 									</div>
-									<div id="collapseFour" class="panel-collapse collapse"
-										role="tabpanel" aria-labelledby="headingFour"
+									<div id="collapseFourteen" class="panel-collapse collapse"
+										role="tabpanel" aria-labelledby="headingFourteen"
 										aria-expanded="false">
 										<div class="panel-body">
 											<div class="table-responsive">

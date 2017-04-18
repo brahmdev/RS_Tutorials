@@ -90,4 +90,33 @@ public class WebController {
 		
 		return "courses";
 	}
+	
+	@RequestMapping(value = "/salientFeature", method = RequestMethod.GET)
+	public String salientFeature(Locale locale, Model model) {
+		logger.info("Welcome on salientFeature Page! The client locale is {}.", locale);
+		
+		return "salientFeature";
+	}
+	
+	@RequestMapping(value = "/foundersMessage", method = RequestMethod.GET)
+	public String founderMessage(Locale locale, Model model) {
+		logger.info("Welcome on foundersMessage Page! The client locale is {}.", locale);
+		
+		return "foundersMessage";
+	}
+	
+	@RequestMapping(value = "/missionVision", method = RequestMethod.GET)
+	public String missionVision(Locale locale, Model model) {
+		logger.info("Welcome on missionVision Page! The client locale is {}.", locale);
+		
+		return "missionVision";
+	}
+	
+	@RequestMapping(value = "/admission", method = RequestMethod.GET)
+	public String admission(Locale locale, Model model) {
+		logger.info("Welcome on admission Page! The client locale is {}.", locale);
+		
+		return "admission";
+	}
+	
 }

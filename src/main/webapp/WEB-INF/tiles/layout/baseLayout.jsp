@@ -12,7 +12,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
-
+<meta name="_csrf" content="${_csrf.token}"/>
+<!-- default header name is X-CSRF-TOKEN -->
+<meta name="_csrf_header" content="${_csrf.headerName}"/>
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 
 <!-- Access the bootstrap Css like this,
@@ -27,8 +29,6 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css"
-	href="css/dataTables.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/buttons.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/select.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/editor.bootstrap.css">
@@ -36,6 +36,8 @@
 	href="css/bootstrap-datepicker.min.css">
 <link rel="stylesheet" type="text/css"
 	href="css/bootstrap-year-calendar.css">	
+	<link rel="stylesheet" type="text/css"
+	href="css/dataTables.bootstrap.css">
 
 
 
@@ -58,6 +60,7 @@ var jQuery_1_1_3 = $.noConflict(true);
 <script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/bootstrap-year-calendar.js"></script>
 <script src="js/bootstrap-popover.js"></script>
+
 <script src="js/jquery.dataTables.js"></script>
 <script src="js/dataTables.bootstrap.js"></script>
 <script src="js/dataTables.buttons.js"></script>

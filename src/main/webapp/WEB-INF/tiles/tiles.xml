@@ -50,5 +50,25 @@
 		<put-attribute name="title" value="Courses" />
 		<put-attribute name="body" value="/WEB-INF/views/courses.jsp" />
 	</definition>
-
+	
+	<definition name="salientFeature" extends="base.definition">
+		<put-attribute name="title" value="Salent Features" />
+		<put-attribute name="body" value="/WEB-INF/views/salientFeature.jsp" />
+	</definition>
+	
+	<definition name="foundersMessage" extends="base.definition">
+		<put-attribute name="title" value="Founders Message" />
+		<put-attribute name="body" value="/WEB-INF/views/foundersMessage.jsp" />
+	</definition>
+	
+	<definition name="missionVision" extends="base.definition">
+		<put-attribute name="title" value="Mission, Vision" />
+		<put-attribute name="body" value="/WEB-INF/views/missionVision.jsp" />
+	</definition>
+	
+	<definition name="admission" extends="base.definition">
+		<put-attribute name="title" value="Admission" />
+		<put-attribute name="body" value="/WEB-INF/views/admission.jsp" />
+	</definition>
+	
 </tiles-definitions>

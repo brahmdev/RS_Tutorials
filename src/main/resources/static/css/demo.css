@@ -1,4 +1,4 @@
-#stylechooser{position:fixed;top:13%;left:-1px;width:220px;min-height:300px;z-index:99999;padding:0 0 15px 0;}
+#stylechooser{position:fixed;top:9%;left:-1px;width:220px;min-height:300px;z-index:99999;padding:0 0 15px 0;}
 #stylechooser .subTitle{color: #fff; padding:20px 0 20px 15px;margin:0;margin:0;border-top:solid 1px transparent;}
 #stylechooser .btn{padding:7px 15px;font-size:13px;line-height:35px}
 #stylechooser .btn.demo-reset{margin-bottom:20px;line-height:1.5;font-size:15px;}

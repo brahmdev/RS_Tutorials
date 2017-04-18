@@ -1475,7 +1475,7 @@ header span {
   line-height: 38px;
   display: block;
 }
-.table {
+/*.table {
   font-family: inherit;
   background-color: #fff;
   border-top: 3px solid #282828;
@@ -1500,7 +1500,7 @@ header span {
 .table tbody tr td {
   border-bottom: 1px solid #ebf0f4;
   padding: 34px 38px;
-}
+}*/
 @media (max-width: 480px) {
   h1 {
     font-size: 50px;
@@ -5983,7 +5983,7 @@ nav.navbar-scroll-top.navbar-transparent .ct-navbarSearch--icon:hover {
     transform: scale(1) translate(0px);
   }
 }
-button {
+/*button {
   outline: none;
 }
 .btn {
@@ -5999,7 +5999,7 @@ button {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
+}*/
 .btn {
   margin-right: 30px;
 }
@@ -6012,14 +6012,14 @@ button {
   border-color: #ffffff;
   color: #2d2d2d;
 }
-.btn-default:hover,
+/*.btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
   color: #ffffff;
   background-color: #82b540;
   border-color: #82b540;
-}
+}*/
 .btn-primary {
   background-color: #82b540;
   border-color: #82b540;
@@ -6180,7 +6180,7 @@ button {
 @media (max-width: 480px) {
   .btn {
     margin-right: 0;
-    margin-bottom: 20px;
+  /*  margin-bottom: 20px;*/
   }
   .btn:last-child {
     margin-bottom: 0;
@@ -8777,7 +8777,7 @@ header .ct-showcaseBox--withImagePerson .ct-u-displayTableCell:first-child {
 }
 .modal-header {
   color: #82b540;
-  padding: 38px 50px;
+  padding: 48px 50px;
   border-bottom: 1px solid #f4f4f4;
 }
 .modal-header .close {
@@ -8922,7 +8922,7 @@ footer .ct-navbar--footer li a:hover {
 }
 .ct-site--map {
   color: #fff;
-  padding: 58px 0;
+  padding: 30px 0;
 }
 .ct-site--map span {
   line-height: 33px;
@@ -9955,7 +9955,7 @@ textarea.ct-input--type1.form-control {
   margin-left: 30px;
 }
 .pagination {
-  font-size: 20px;
+  /*font-size: 20px;*/
   margin: 0;
 }
 .pagination li a {

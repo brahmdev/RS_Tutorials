@@ -7,13 +7,15 @@
 	</div>
 	<nav class="ct-menuMobile">
 		<ul class="ct-menuMobile-navbar">
-			<li class="dropdown active"><a href="/">Home</a>
-
-			<li class="dropdown"><a href="courses.do">Courses</a></li>
+			<li class="active"><a href="/">Home</a>
+			<li class="dropdown"><a>Courses</a>
+				<ul class="dropdown-menu">		
+					<li><a href="courses.do">Course Detail</a></li>
+				</ul>
+			</li>
 			<li class="dropdown"><a>Admission</a>
 				<ul class="dropdown-menu">
-					<li><a href="members.html">Admission Process</a></li> 
-					<li><a href="member-single.html">Admission	Form</a></li>
+					<li><a href="admission.do">Admission Process</a></li> 
 				</ul>
 			<li class="dropdown"><a>Results</a>
 				<ul class="dropdown-menu">
@@ -40,9 +42,9 @@
 			</sec:authorize>
 			<li class="dropdown"><a>About Us</a>
 				<ul class="dropdown-menu">
-					<li><a href="calendar.do">Salient Features</a></li>
-					<li><a href="calendar.do">Mission &amp; Vision</a></li>
-					<li><a href="calendar.do">Message from Founder(s)</a></li>
+					<li><a href="salientFeature.do">Salient Features</a></li>
+					<li><a href="missionVision.do">Mission &amp; Vision</a></li>
+					<li><a href="foundersMessage.do">Message from Founder(s)</a></li>
 				</ul>
 			</li>
 			<li class="dropdown"><a href="contact.do">Contact</a></li>
@@ -104,11 +106,14 @@
 				<div class="ct-navbar--fluid pull-right">
 					<ul class="nav navbar-nav ct-navbar--fadeInUp">
 						<li class="dropdown active"><a href="/">Home</a></li>
-						<li class="dropdown"><a href="/courses.do">Courses</a></li>
+						<li class="dropdown"><a>Courses</a>
+							<ul class="dropdown-menu">		
+								<li><a href="courses.do">Course Detail</a></li>
+							</ul>
+						</li>
 						<li class="dropdown"><a>Admission</a>
 							<ul class="dropdown-menu">		
-								<li><a href="members.html">Admission Process</a></li>
-								<li><a href="member-single.html">Admission Form</a></li>
+								<li><a href="admission.do">Admission Process</a></li>
 							</ul>
 						</li>
 								
@@ -136,9 +141,9 @@
 						</sec:authorize>
 						<li class="dropdown"><a>About Us</a>
 							<ul class="dropdown-menu">
-								<li><a href="calendar.do">Salient Features</a></li>
-								<li><a href="calendar.do">Mission &amp; Vision</a></li>
-								<li><a href="calendar.do">Message from Founder(s)</a></li>
+								<li><a href="salientFeature.do">Salient Features</a></li>
+								<li><a href="missionVision.do">Mission &amp; Vision</a></li>
+								<li><a href="foundersMessage.do">Message from Founder(s)</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a href="contact.do">Contact</a></li>
