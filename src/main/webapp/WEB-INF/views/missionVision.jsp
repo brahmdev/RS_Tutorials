@@ -29,20 +29,20 @@
 					<div role="tabpanel">
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs nav-justified" role="tablist">
-							<li role="presentation" class=""><a href="#history3"
+							<li role="presentation" class="active"><a href="#history3"
 								aria-controls="history3" role="tab" data-toggle="tab"
 								aria-expanded="false">Our History</a></li>
 							<li role="presentation" class=""><a href="#vision3"
 								aria-controls="vision3" role="tab" data-toggle="tab"
 								aria-expanded="false">Our Vision</a></li>
-							<li role="presentation" class="active"><a href="#mission3"
+							<li role="presentation"><a href="#mission3"
 								aria-controls="mission3" role="tab" data-toggle="tab"
 								aria-expanded="true">Our Misson</a></li>
 						</ul>
 						<div class="clearfix"></div>
 						<!-- Tab panes -->
 						<div class="tab-content tab-content--borderNone">
-							<div role="tabpanel" class="tab-pane" id="history3">
+							<div role="tabpanel" class="tab-pane active" id="history3">
 								<p class="list-group-item list-group-item-success">Established
 									in 2014. And looking for bright future. More description coming
 									soon....</p>
@@ -68,7 +68,7 @@
 									and enabling them to face life in future positively, with
 									radiant confidence and</p>
 							</div>
-							<div role="tabpanel" class="tab-pane active" id="mission3">
+							<div role="tabpanel" class="tab-pane" id="mission3">
 								<p class="list-group-item list-group-item-info">The
 									immediate goal is to spread out in Mumbai by the year 2018. The
 									aim today is to form a network of quality Institutes throughout

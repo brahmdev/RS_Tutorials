@@ -7,7 +7,7 @@
 				</div>
 				<div class="ct-u-displayTableCell text-right">
 					<span class="ct-u-textNormal ct-u-textItalic"> <a
-						href="index.html">Home</a> / <a href="#">Contact Us</a>
+						href="index.html">Admission</a> / <a href="#">Admission Process</a>
 					</span>
 				</div>
 			</div>
@@ -20,7 +20,7 @@
 					<div class="col-sm-6 col-md-6 col-lg-3">
 						<div class="ct-priceBox text-center">
 							<div
-								class="ct-priceSection ct-priceBox-section list-group-item list-group-item-info">
+								class="ct-priceSection ct-priceBox-section dodger-blue-color">
 								<h5>Course Search</h5>
 								<div class="ct-priceBox-fullPrice">
 									<a href="/courses.do"><span
@@ -40,7 +40,7 @@
 					<div class="col-sm-6 col-md-6 col-lg-3">
 						<div class="ct-priceBox text-center">
 							<div
-								class="ct-priceSection ct-priceBox-section list-group-item list-group-item-warning">
+								class="ct-priceSection ct-priceBox-section golden-color">
 								<h5>Fill the Documents</h5>
 								<div class="ct-priceBox-fullPrice">
 									<span class="ct-main-price ct-fw-700 fa fa-envelope-o"></span>
@@ -60,7 +60,7 @@
 					<div class="col-sm-6 col-md-6 col-lg-3">
 						<div class="ct-priceBox text-center">
 							<div
-								class="ct-priceSection ct-priceBox-section list-group-item list-group-item-success">
+								class="ct-priceSection ct-priceBox-section purple-color">
 								<h5>Payments</h5>
 								<div class="ct-priceBox-fullPrice">
 									<span class="ct-main-price ct-fw-700 fa fa-inr"></span>

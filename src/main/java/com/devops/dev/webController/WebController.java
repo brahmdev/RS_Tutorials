@@ -7,6 +7,7 @@ import java.util.Locale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -117,6 +118,35 @@ public class WebController {
 		logger.info("Welcome on admission Page! The client locale is {}.", locale);
 		
 		return "admission";
+	}
+	
+	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	@RequestMapping(value = "/adminDashBoard", method = RequestMethod.GET)
+	public String adminDashBoard(Locale locale, Model model) {
+		logger.info("Welcome on adminDashBoard Page! The client locale is {}.", locale);
+		
+		return "adminDashBoard";
+	}
+	
+	@RequestMapping(value = "/boards", method = RequestMethod.GET)
+	public String boards(Locale locale, Model model) {
+		logger.info("Welcome on boards Page! The client locale is {}.", locale);
+		
+		return "boards";
+	}
+	
+	@RequestMapping(value = "/classLevel", method = RequestMethod.GET)
+	public String classLevel(Locale locale, Model model) {
+		logger.info("Welcome on classLevel Page! The client locale is {}.", locale);
+		
+		return "classLevel";
+	}
+	
+	@RequestMapping(value = "/classLevelType", method = RequestMethod.GET)
+	public String classLevelType(Locale locale, Model model) {
+		logger.info("Welcome on classLevelType Page! The client locale is {}.", locale);
+		
+		return "classLevelType";
 	}
 	
 }

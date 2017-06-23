@@ -14,15 +14,18 @@
 		</div>
 	</div>
 </div>
+<br>
 <table id="example" class="table table-striped table-bordered">
 	<thead>
 		<tr>
+			<th>Country Id</th>
 			<th>Country Code</th>
 			<th>Country Name</th>
 		</tr>
 	</thead>
 	<tfoot>
 		<tr>
+			<th>Country Id</th>
 			<th>Country Code</th>
 			<th>Country Name</th>
 		</tr>

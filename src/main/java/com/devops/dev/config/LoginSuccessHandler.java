@@ -65,7 +65,7 @@ implements AuthenticationSuccessHandler {
       if (isUser) {
           return "/contact.do";
       } else if (isAdmin) {
-          return "/calendar.do";
+          return "/adminDashBoard.do";
       } else {
           throw new IllegalStateException();
       }

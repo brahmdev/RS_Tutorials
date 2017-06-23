@@ -27,7 +27,7 @@
 	</definition>
 	
 	<definition name="country" extends="base.definition">
-		<put-attribute name="title" value="Counttry" />
+		<put-attribute name="title" value="Country" />
 		<put-attribute name="body" value="/WEB-INF/views/country.jsp" />
 	</definition>
 	
@@ -69,6 +69,26 @@
 	<definition name="admission" extends="base.definition">
 		<put-attribute name="title" value="Admission" />
 		<put-attribute name="body" value="/WEB-INF/views/admission.jsp" />
+	</definition>
+	
+	<definition name="adminDashBoard" extends="base.definition">
+		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="body" value="/WEB-INF/views/adminDashBoard.jsp" />
+	</definition>
+	
+	<definition name="boards" extends="base.definition">
+		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="body" value="/WEB-INF/views/boards.jsp" />
+	</definition>
+	
+	<definition name="classLevel" extends="base.definition">
+		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="body" value="/WEB-INF/views/classLevel.jsp" />
+	</definition>
+	
+	<definition name="classLevelType" extends="base.definition">
+		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="body" value="/WEB-INF/views/classLevelType.jsp" />
 	</definition>
 	
 </tiles-definitions>
