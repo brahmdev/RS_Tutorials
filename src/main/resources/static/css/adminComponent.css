@@ -1,0 +1,264 @@
+.dashboard_4_advertise_box {
+    padding: 15px;
+    overflow: hidden;
+    color: #FFF;
+    position: relative;
+    height: 151px;
+    display: block
+}
+
+.dashboard_4_advertise_box h5,
+.dashboard_4_advertise_box i {
+    color: #FFF
+}
+
+.dashboard_4_advertise_box i {
+    font-size: 28px
+}
+
+.dashboard_4_advertise_box.dashboard_4_advertise_box2 {
+    padding: 30px 15px
+}
+
+.dashboard_4_advertise_box3 {
+    overflow: hidden;
+    color: #FFF;
+    height: 151px
+}
+
+.dashboard_4_advertise_box3 h4,
+.dashboard_4_advertise_box3 h5,
+.dashboard_4_advertise_box3 i {
+    color: #FFF
+}
+
+.dashboard_4_advertise_box3 i {
+    line-height: 65px;
+    font-size: 50px
+}
+
+.dashboard_4_advertise_box3.google_bg {
+    background: #dd4b39
+}
+
+.dashboard_4_advertise_box3.twitter_bg {
+    background: #55acee
+}
+
+.dashboard_4_advertise_image {
+    background-image: url(../image/product.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 151px;
+    padding: 20px
+}
+
+.dashboard_4_advertise_image h5 {
+    color: #FFF
+}
+
+.advertise_box_icon i {
+    font-size: 45px;
+    margin-bottom: 15px
+}
+
+.dashboard_v4_advertise_block {
+    margin-bottom: 20px;
+    overflow: hidden
+}
+
+.tile-active {
+    margin: 0;
+    height: 176px;
+    overflow: hidden
+}
+
+@media (min-width:1200px) and (max-width:1468px) {
+    .dashboard_v4_block {
+        width:40%
+    }
+    .dashboard_v4_block2 {
+        width: 60%
+    }
+    .dashboard_v4_project_block table tbody tr {
+        padding: 0 10px
+    }
+    .dashboard_v4_project_block table tbody td {
+        padding: 9px 8px
+    }
+    #dashboard_v4_revenue_chart {
+        height: 309px
+    }
+}
+
+@media (max-width:1366px) {
+    .dashboard_v4_box_block .content {
+        padding: 15px
+    }
+    .dashboard_v4_box_icon {
+        width: 70px;
+        height: 70px;
+        margin: 6px 0
+    }
+    .dashboard_v4_box_icon i {
+        font-size: 25px;
+        line-height: 58px
+    }
+    .dashboard_v4_box_title h4 {
+        font-size: 20px
+    }
+    .dashboard_v4_box_title p {
+        font-size: 12px
+    }
+    .dashboard_v4_project_main {
+        margin-right: -15px
+    }
+    .dashboard_v4_revenue_block {
+        margin-left: -15px
+    }
+    .dashboard_v4_chart_contain h5 {
+        font-size: 16px
+    }
+    .dashboard_v4_box_block h4 {
+        font-size: 19px
+    }
+    .dashboard_4_advertise_box h5 {
+        font-size: 14px
+    }
+    .dashboard_4_advertise_box p {
+        font-size: 12px
+    }
+    .dashboard_4_advertise_box3 i {
+        font-size: 35px
+    }
+    .dashboard_4_advertise_box3 h4 {
+        font-size: 20px
+    }
+    .dashboard_4_advertise_box3 h5 {
+        font-size: 14px
+    }
+    .dashboard_v4_map .map svg {
+        margin: auto
+    }
+}
+
+@media (max-width:1199px) {
+    .dashboard_v4_box_block .content {
+        padding: 20px
+    }
+    .dashboard_v4_box_icon {
+        width: 80px;
+        height: 80px;
+        margin: 0
+    }
+    .dashboard_v4_box_icon i {
+        font-size: 27px;
+        line-height: 70px
+    }
+    .dashboard_v4_box_title h4 {
+        font-size: 24px
+    }
+    .dashboard_v4_box_title p {
+        font-size: 14px
+    }
+    .dashboard_v4_project_main {
+        margin-right: 0
+    }
+    .dashboard_v4_revenue_block {
+        margin-left: 0
+    }
+    .dashboard_v4_chart_contain h5 {
+        font-size: 20px
+    }
+    .dashboard_v4_box_block h5 {
+        font-size: 24px
+    }
+    .dashboard_v4_sm_space {
+        height: 15px;
+        clear: both
+    }
+    .dashboard_4_advertise_box h5 {
+        font-size: 20px
+    }
+    .dashboard_4_advertise_box p {
+        font-size: 14px
+    }
+}
+
+@media (max-width:991px) {
+    .dashboard_v4_box_block h5 {
+        font-size: 17px
+    }
+}
+
+.advertize_box2,
+.analytics-dashbard-page .social-icon-slider,
+.dahsboard-analytics {
+    margin-bottom: 20px
+}
+
+.advertize_box {
+    padding: 40px 20px;
+    overflow: hidden
+}
+
+.wrapper .advertize_contain h4,
+.wrapper .advertize_contain p {
+    color: #FFF
+}
+
+.wrapper .advertize_contain .btn-outline-primary {
+    color: #FFF;
+    border-color: #FFF
+}
+
+.wrapper .advertize_contain .btn-outline-primary:focus,
+.wrapper .advertize_contain .btn-outline-primary:hover {
+    background: 0 0;
+    border-color: #FFF;
+    border-width: 1px;
+    border-style: solid
+}
+
+.analytics_user_section .content,
+.chart_section .content {
+    border: none
+}
+
+.advertize_box2 {
+    color: #FFF
+}
+
+.advertize_contain2 {
+    text-align: left;
+    padding: 10px 20px
+}
+
+.advertize_contain2 h4 {
+    color: #FFF
+}
+
+.advertize_icon {
+    float: right;
+    padding: 10px 20px;
+    opacity: .5
+}
+
+.advertize_icon i {
+    font-size: 50px;
+    line-height: 70px
+}
+
+
+bootstrap.min.css:6
+.text-xs-center {
+    text-align: center!important;
+}
+
+.text-xs-center {
+    text-align: center!important;
+}
+
+/*.float-xs-right {
+	float : right;
+}*/
