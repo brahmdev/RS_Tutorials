@@ -9,6 +9,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.devops.dev.domainObject.Board;
+import com.devops.dev.domainObject.ClassLevel;
 import com.devops.dev.domainObject.ClassLevelType;
 
 @Repository
@@ -51,4 +53,17 @@ public class ClassLevelTypeDao {
 		getSession().update(classLevelType);
 		return;
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Board> getAllBoards() {
+		/*return getSession().createQuery("from ClassLevelType as ct right outer join ct.board").list();*/
+		return getSession().createQuery("from Board").list();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<ClassLevel> getAllClassLevel() {
+		/*return getSession().createQuery("from ClassLevelType as ct right outer join ct.board").list();*/
+		return getSession().createQuery("from ClassLevel").list();
+	}
+
 }

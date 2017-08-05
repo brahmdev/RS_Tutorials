@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
-
 <body class="cssAnimate ct-headroom--scrollUpMenu">
 	<div class="ct-preloader">
 		<div class="ct-preloader-content"></div>
@@ -37,7 +36,8 @@
 						<li><a href="calendar.do">Finance</a></li>
 						<li><a href="boards.do">Boards</a></li>
 						<li><a href="classLevel.do">Class Level</a></li>
-						<li><a href="classLevelType.do">Class Level Type</a></li>
+						<li><a href="classLevelType.do">Class Name(Standard)</a></li>
+						<li><a href="subject.do">Subject</a></li>
 					</ul></li>
 			</sec:authorize>
 			<li class="dropdown"><a>About Us</a>
@@ -139,7 +139,8 @@
 									<li><a href="calendar.do">Finance</a></li>
 									<li><a href="boards.do">Boards</a></li>
 									<li><a href="classLevel.do">Class Level</a></li>
-									<li><a href="classLevelType.do">Class Level Type</a></li>
+									<li><a href="classLevelType.do">Class Name(Standard)</a></li>
+									<li><a href="subject.do">Subject</a></li>
 								</ul></li>
 						</sec:authorize>
 						<li class="dropdown"><a>About Us</a>

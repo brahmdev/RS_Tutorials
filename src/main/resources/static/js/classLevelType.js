@@ -1,6 +1,8 @@
 var editor; // use a global for the submit and return data rendering in the
 // examples
 var table;
+var boardsDropDownJSON = null;
+var classLevelDropDownJSON = null;
 $(document).ready(
 		function() {
 			var token = $("meta[name='_csrf']").attr("content");
@@ -9,83 +11,155 @@ $(document).ready(
 					xhr.setRequestHeader('X-CSRF-TOKEN', token);
 				}
 			});
-			editor = new $.fn.dataTable.Editor({
-				ajax : {
-					type : 'POST',
-					contentType : 'application/json',
-					data : function(d) {
-						return JSON.stringify(d);
-					},
-					url : 'classLevelTypeAction.do',
-
-					submitSuccess : function(e,json, data) {
-						alert(json);
-						table.ajax.reload();
-					},
-					
-					submitError : function(xhr, error, thrown) {
-						console.log(xhr, error, thrown);
-					}
-
+			$.ajax({
+				type : 'POST',
+				url : 'getBoards.do',
+				contentType : 'application/json',
+				dataType : 'json',
+				data : {
+					'csrfmiddlewaretoken' : $("meta[name='_csrf']").attr(
+							"content")
 				},
-				idSrc:  'classLevelTypeId',
-				table : "#classLevelTypeTable",
-				fields : [ {
-					label : "Class Level Id",
-					name : "classLevelTypeId"
-				}, {
-					label : "Board Name:",
-					name : "className",
-					type : "select"
-				}/*, {
-					label : "Class Nmae:",
-					name : "className"
-				}*/ ],
-				submitSuccess : function(e,json, data) {
-					alert(json);
-					table.ajax.reload();
+				error : function() {
+					$('#info').html('<p>An error has occurred</p>');
+				},
+				success : function(data) {
+					boardsDropDownJSON = $.parseJSON(JSON.stringify(data));
+					console.log(boardsDropDownJSON);
+					if (boardsDropDownJSON != null
+							&& classLevelDropDownJSON != null) {
+						formTableNEditor();
+					}
 				},
 			});
 
-			var dataToSend = {
-				action : "getAll"
-			};
-			table = $('#classLevelTypeTable').DataTable(
-					{
-						lengthChange : true,
-						/*processing: true,
-				        serverSide: true,*/
-						ajax : {
-							type : 'POST',
-							url : "classLevelTypeList.do",
-							contentType : 'application/json',
-							dataType : 'json',
-							data : {
-								'csrfmiddlewaretoken' : $("meta[name='_csrf']")
-										.attr("content")
-							}
+			$.ajax({
+				url : 'getClassLevel.do',
+				contentType : 'application/json',
+				dataType : 'json',
+				data : {
+					'csrfmiddlewaretoken' : $("meta[name='_csrf']").attr(
+							"content")
+				},
+				error : function() {
+					$('#info').html('<p>An error has occurred</p>');
+				},
+				success : function(data) {
+					classLevelDropDownJSON = $.parseJSON(JSON.stringify(data));
+					console.log(classLevelDropDownJSON);
+					if (boardsDropDownJSON != null
+							&& classLevelDropDownJSON != null) {
+						formTableNEditor();
+					}
+				},
+				type : 'POST'
+			});
+
+			function formTableNEditor() {
+				editor = new $.fn.dataTable.Editor({
+					ajax : {
+						type : 'POST',
+						contentType : 'application/json',
+						data : function(d) {
+							return JSON.stringify(d);
 						},
-						columns : [ {
-							data : "classLevelTypeId"
-						}, {
-							data : "className"
-						}, ],
-						select : true
-					});
+						url : 'classLevelTypeAction.do',
 
-			// Display the buttons
-			new $.fn.dataTable.Buttons(table, [ {
-				extend : "create",
-				editor : editor
-			}, {
-				extend : "edit",
-				editor : editor
-			}, {
-				extend : "remove",
-				editor : editor
-			} ]);
+						submitSuccess : function(e, json, data) {
+							alert(json);
+							table.ajax.reload();
+						},
 
-			table.buttons().container().appendTo(
-					$('.col-sm-6:eq(0)', table.table().container()));
+						submitError : function(xhr, error, thrown) {
+							console.log(xhr, error, thrown);
+						}
+
+					},
+					idSrc : 'classLevelTypeId',
+					table : "#classLevelTypeTable",
+					fields : [ {
+						label : "Class Level Id",
+						name : "classLevelTypeId"
+					}, {
+						label : "Class Name:",
+						name : "className"
+					},/*
+						 * { label : "Class Level:", name :
+						 * "classLevel.description", type : "select" },
+						 */{
+						label : "Board Name:",
+						name : "board.boardId",
+						type : "select",
+						options : boardsDropDownJSON
+					}, {
+						label : "Type:",
+						name : "classLevel.classLevelId",
+						type : "select",
+						options : classLevelDropDownJSON
+					},{
+						label : "Language:",
+						name : "language",
+						type : "select",
+						options : [{"label":"Hindi", "value" : "Hindi"},
+						           {"label": "English", "value":"English"}]
+					} ],
+					submitSuccess : function(e, json, data) {
+						alert(json);
+						table.ajax.reload();
+					},
+				});
+				var dataToSend = {
+					action : "getAll"
+				};
+				table = $('#classLevelTypeTable').DataTable(
+						{
+							lengthChange : true,
+							paging		 : false,
+							/*"language": {
+					            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Hindi.json"
+					        },*/
+							//scrollY:        '50vh',
+					        //scrollCollapse: true,
+							/*
+							 * processing: true, serverSide: true,
+							 */
+							ajax : {
+								type : 'POST',
+								url : "classLevelTypeList.do",
+								contentType : 'application/json',
+								dataType : 'json',
+								data : {
+									'csrfmiddlewaretoken' : $(
+											"meta[name='_csrf']").attr(
+											"content")
+								}
+							},
+							columns : [ {
+								data : "classLevelTypeId"
+							}, {
+								data : "className"
+							}, {
+								data : "board.boardName"
+							}, {
+								data : "classLevel.description"
+							}, {
+								data : "language"
+							} ],
+							select : true
+						});
+				new $.fn.dataTable.Buttons(table, [ {
+					extend : "create",
+					editor : editor
+				}, {
+					extend : "edit",
+					editor : editor
+				}, {
+					extend : "remove",
+					editor : editor
+				} ]);
+
+				table.buttons().container().appendTo(
+						$('.col-sm-6:eq(0)', table.table().container()));
+			}
 
 		});

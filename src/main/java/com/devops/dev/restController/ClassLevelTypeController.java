@@ -17,7 +17,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devops.dev.dao.ClassLevelTypeDao;
+import com.devops.dev.domainObject.Board;
+import com.devops.dev.domainObject.ClassLevel;
 import com.devops.dev.domainObject.ClassLevelType;
+import com.devops.dev.domainObject.DropDownJSONType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,7 +33,7 @@ public class ClassLevelTypeController {
 	private ClassLevelTypeDao classLevelTypeDao;
 
 	@RequestMapping("/classLevelTypeList")
-	public String greeting(String name) throws JsonProcessingException {
+	public String classLevelTypeList(String name) throws JsonProcessingException {
 
 		List<ClassLevelType> classLevelTypeList = new ArrayList<ClassLevelType>();
 		classLevelTypeList = classLevelTypeDao.getAll();
@@ -118,5 +121,45 @@ public class ClassLevelTypeController {
 			classLevelTypeDao.delete(classLevelType);
 			System.out.println(classLevelType.getClassLevelTypeId() + " : " + classLevelType.getClassName() + " " + classLevelType.getLanguage());
 		}
+	}
+	
+	@RequestMapping("/getBoards")
+	public String getBoards() throws JsonProcessingException {
+
+		List<Board> boardList = new ArrayList<Board>();
+		boardList = classLevelTypeDao.getAllBoards();
+		
+		List<DropDownJSONType> jsonDropDownLoist = new ArrayList<DropDownJSONType>();
+		for(Board board : boardList) {
+			DropDownJSONType json = new DropDownJSONType();
+			json.setValue(String.valueOf(board.getBoardId()));
+			json.setLabel(board.getBoardName());
+			jsonDropDownLoist.add(json);
+		}
+		
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(jsonDropDownLoist);
+		return jsonInString;
+	}
+	
+	@RequestMapping("/getClassLevel")
+	public String getClassLevel() throws JsonProcessingException {
+
+		List<ClassLevel> classLevelList = new ArrayList<ClassLevel>();
+		classLevelList = classLevelTypeDao.getAllClassLevel();
+		
+		List<DropDownJSONType> jsonDropDownLoist = new ArrayList<DropDownJSONType>();
+		for(ClassLevel classLevel : classLevelList) {
+			DropDownJSONType json = new DropDownJSONType();
+			json.setValue(String.valueOf(classLevel.getClassLevelId()));
+			json.setLabel(classLevel.getDescription());
+			jsonDropDownLoist.add(json);
+		}
+		
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(jsonDropDownLoist);
+		return jsonInString;
 	}
 }

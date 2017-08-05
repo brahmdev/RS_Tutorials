@@ -77,18 +77,23 @@
 	</definition>
 	
 	<definition name="boards" extends="base.definition">
-		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="title" value="Board Management" />
 		<put-attribute name="body" value="/WEB-INF/views/boards.jsp" />
 	</definition>
 	
 	<definition name="classLevel" extends="base.definition">
-		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="title" value="Class Level" />
 		<put-attribute name="body" value="/WEB-INF/views/classLevel.jsp" />
 	</definition>
 	
 	<definition name="classLevelType" extends="base.definition">
-		<put-attribute name="title" value="Admin DashBoard" />
+		<put-attribute name="title" value="Class Level Type" />
 		<put-attribute name="body" value="/WEB-INF/views/classLevelType.jsp" />
+	</definition>
+	
+	<definition name="subject" extends="base.definition">
+		<put-attribute name="title" value="Subject Management" />
+		<put-attribute name="body" value="/WEB-INF/views/subject.jsp" />
 	</definition>
 	
 </tiles-definitions>

@@ -18,19 +18,19 @@
 	<thead>
 		<tr>
 			<th>Class Level Type Id</th>
-			<th>Board Name</th>
-			<!-- <th>Class Level</th>
 			<th>Class Name</th>
-			<th>Language</th> -->
+			<th>Board Name</th>
+			<th>Class Level</th>
+			<th>Language</th>
 		</tr>
 	</thead>
 	<tfoot>
 		<tr>
 			<th>Class Level Type Id</th>
-			<th>Board Name</th>
-			<!-- <th>Class Level</th>
 			<th>Class Name</th>
-			<th>Language</th> -->
+			<th>Board Name</th>
+			<th>Class Level</th>
+			<th>Language</th>
 		</tr>
 	</tfoot>
 </table>

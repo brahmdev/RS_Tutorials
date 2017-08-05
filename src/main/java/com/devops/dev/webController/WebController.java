@@ -149,4 +149,10 @@ public class WebController {
 		return "classLevelType";
 	}
 	
+	@RequestMapping(value = "/subject", method = RequestMethod.GET)
+	public String subject(Locale locale, Model model) {
+		logger.info("Welcome on Subject Management Page! The client locale is {}.", locale);
+		
+		return "subject";
+	}
 }
