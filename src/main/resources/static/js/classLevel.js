@@ -51,6 +51,9 @@ $(document).ready(
 						lengthChange : true,
 						/*processing: true,
 				        serverSide: true,*/
+						paging : false,
+						scrollY:        '27vh',
+				        scrollCollapse: true,
 						ajax : {
 							type : 'POST',
 							url : "classLevelList.do",

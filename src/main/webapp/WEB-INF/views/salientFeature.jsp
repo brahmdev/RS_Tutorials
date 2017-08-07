@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="ct-u-displayTableVertical text-capitalize">
 				<div class="ct-u-displayTableCell">
-					<span class="ct-u-textBig"> Salient Features </span>
+					<span class="ct-u-textNormal"> Salient Features </span>
 				</div>
 				<div class="ct-u-displayTableCell text-right">
 					<span class="ct-u-textNormal ct-u-textItalic"> <a

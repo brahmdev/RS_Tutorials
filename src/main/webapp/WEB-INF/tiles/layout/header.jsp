@@ -30,14 +30,15 @@
 						<li><a href="admin/calendar.do">Attendance</a></li>
 					</ul></li>
 
-				<li class="dropdown"><a>Admin</a>
+				<li class="dropdown"><a>Settings</a>
 					<ul class="dropdown-menu">
-						<li><a href="calendar.do">Roles</a></li>
+						<li><a href="calendar.do">Privileges</a></li>
 						<li><a href="calendar.do">Finance</a></li>
 						<li><a href="boards.do">Boards</a></li>
 						<li><a href="classLevel.do">Class Level</a></li>
 						<li><a href="classLevelType.do">Class Name(Standard)</a></li>
 						<li><a href="subject.do">Subject</a></li>
+						<li><a href="calendar.do">Visitors List</a></li>
 					</ul></li>
 			</sec:authorize>
 			<li class="dropdown"><a>About Us</a>
@@ -63,7 +64,7 @@
 
 		<div class="ct-topBar text-center">
 			<div class="container">
-				<ul class="ct-panel--user list-inline text-uppercase pull-left">
+				<ul class="ct-panel--user list-inline text-uppercase pull-left" >
 					<sec:authorize access="!isAuthenticated()">
 						<li><a href="login" class="ct-js-login">login<i
 								class="fa fa-lock"></i></a></li>
@@ -71,7 +72,7 @@
 								class="fa fa-user"></i></a></li>
 					</sec:authorize>
 					<sec:authorize access="isAuthenticated()">
-						<li>Welcome <b><c:out
+						<li style="padding-top:6px;">Welcome <b><c:out
 									value="${pageContext.request.remoteUser}"></c:out></b></li>
 					</sec:authorize>
 				</ul>
@@ -126,17 +127,43 @@
 								<li><a href="#">Testimonials</a></li>
 							</ul></li>
 						<sec:authorize access="hasRole('ROLE_ADMIN')">
-							<li class="dropdown"><a>Management</a>
+							<li class="dropdown yamm-fw"><a>Settings</a>
 								<ul class="dropdown-menu">
-									<li><a href="calendar.do">Event</a></li>
-									<li><a href="calendar.do">Student</a></li>
-									<li><a href="calendar.do">Staff</a></li>
-									<li><a href="calendar.do">Attendance</a></li>
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-4">
+														<a href="calendar.do">Event</a>
+														<a href="calendar.do">Student</a>
+														<a href="calendar.do">Staff</a>
+														<a href="calendar.do">Attendance</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Visitors List</a>
+														<a href="calendar.do">Privileges</a>
+														<a href="calendar.do">Fee Details</a>
+												</div>
+											</div>
+										</div>
+									</li>
 								</ul></li>
-							<li class="dropdown"><a>Admin</a>
+							<li class="dropdown"><a>Time Table</a>
 								<ul class="dropdown-menu">
-									<li><a href="calendar.do">Roles</a></li>
-									<li><a href="calendar.do">Finance</a></li>
+										<li><a href="calendar.do">Set TimeTable</a></li>
+										<li><a href="calendar.do">View Class TimeTable</a></li>
+										<li><a href="calendar.do">View Teacher TimeTable</a></li>
+										<li><a href="calendar.do">Teacher Working TimeTable</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a>Exams</a>
+								<ul class="dropdown-menu">
+											<li><a href="calendar.do">Set Exam</a></li>
+											<li><a href="calendar.do">Set Question Paper</a></li>
+											<li><a href="calendar.do">Set Mark List</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a>Academic</a>
+								<ul class="dropdown-menu">
 									<li><a href="boards.do">Boards</a></li>
 									<li><a href="classLevel.do">Class Level</a></li>
 									<li><a href="classLevelType.do">Class Name(Standard)</a></li>

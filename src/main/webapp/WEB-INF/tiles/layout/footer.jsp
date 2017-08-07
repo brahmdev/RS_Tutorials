@@ -1,25 +1,11 @@
 <footer>
 	<div class="ct-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-push-6">
-					<ul
-						class="list-unstyled list-inline text-right ct-fw-300 ct-navbar--footer">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="index.html">Course	</a></li>
-						<li><a href="gallery.html">Admission</a></li>
-						<li><a href="blog.html">Result</a></li>
-						<li><a href="blog.html">About Us</a></li>
-						<li><a href="index.html">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 col-md-pull-6">
-					<ul class="list-unstyled list-inline ct-copyright">
+		<div class="container text-center">
+			<ul class="list-unstyled list-inline ct-copyright">
 						<li>Copyright 2017</li>
-						<li>Created by <a href="http://www.rstutorials.edu">RS Tutorials</a></li>
+						<li>Created by <a style="color:#fff;" href="http://www.rstutorials.edu">RS
+								Tutorials</a></li>
 					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 </footer>
@@ -28,86 +14,95 @@
 <!-- <script src="js/main-compiled.js"></script> -->
 
 <script>
-if (isDashBoard) {
-var body = document.getElementsByTagName('body')[0];
-var script = document.createElement('script');
+	if (isDashBoard) {
+		var body = document.getElementsByTagName('body')[0];
+		var script = document.createElement('script');
 
-script.type = 'text/javascript';
+		script.type = 'text/javascript';
 
+		script.src = "js/main-compiled.js";
+		body.appendChild(script);
 
-    script.src = "js/main-compiled.js";
-	body.appendChild(script);
-
-	
-}
-
+	}
 </script>
 <script src="js/header.js"></script>
 <!-- switcher -->
 <script src="js/demo.js"></script>
 
 <script type="text/javascript">
-    $('head').append('<link rel="stylesheet" type="text/css" href="css/demo.css">');
-    /* $('head').append('<link rel="stylesheet" type="text/css" href="php/generator.php">'); */
-    $('head').append('<link rel="stylesheet" type="text/css" href="css/generator.css">');
+	$('head').append(
+			'<link rel="stylesheet" type="text/css" href="css/demo.css">');
+	/* $('head').append('<link rel="stylesheet" type="text/css" href="php/generator.php">'); */
+	$('head').append(
+			'<link rel="stylesheet" type="text/css" href="css/generator.css">');
 </script>
 <div id="stylechooser">
-    <div class="easyBox flat">
-        <h6 class="subTitle">Style Switcher</h6>
-      <a href="#" class="entypo cancel-squared" id="styleToggle"><i class="fa fa-cogs"></i></a>
-    </div>
+	<div class="easyBox flat">
+		<h6 class="subTitle">Style Switcher</h6>
+		<a href="#" class="entypo cancel-squared" id="styleToggle"><i
+			class="fa fa-cogs"></i></a>
+	</div>
 
-    <div class="easyBox">
+	<div class="easyBox">
 
-      <div class="mkSpace">
-         <label>Main Color</label>
-         <ul class="demoList clearfix">
-           <li><a href="#" title="Green" data-value="Green"><span class="demoColor" style="background:#99cd4d;"></span></a></li>
-           <li><a href="#" data-value="Red"><span class="demoColor" style="background:#ce0000;"></span></a></li>
-          <li><a href="#" data-value="Orange"><span class="demoColor" style="background:#ff7f00;"></span></a></li>
-          <li><a href="#" data-value="Yellow"><span class="demoColor" style="background:#ffd600;"></span></a></li>
-          <li><a href="#" data-value="Purple" class="demoActive"><span class="demoColor" style="background:#ad53c1;"></span></a></li>
-          <li><a href="#" data-value="Sun"><span class="demoColor" style="background:#ffb400;"></span></a></li>
-          <li><a href="#" data-value="LightPink"><span class="demoColor" style="background:#00726d;"></span></a></li>
-          <li><a href="#" data-value="LightBlue"><span class="demoColor" style="background:#2b8be9;"></span></a></li>
+		<div class="mkSpace">
+			<label>Main Color</label>
+			<ul class="demoList clearfix">
+				<li><a href="#" title="Green" data-value="Green"><span
+						class="demoColor" style="background: #99cd4d;"></span></a></li>
+				<li><a href="#" data-value="Red"><span class="demoColor"
+						style="background: #ce0000;"></span></a></li>
+				<li><a href="#" data-value="Orange"><span class="demoColor"
+						style="background: #ff7f00;"></span></a></li>
+				<li><a href="#" data-value="Yellow"><span class="demoColor"
+						style="background: #ffd600;"></span></a></li>
+				<li><a href="#" data-value="Purple" class="demoActive"><span
+						class="demoColor" style="background: #ad53c1;"></span></a></li>
+				<li><a href="#" data-value="Sun"><span class="demoColor"
+						style="background: #ffb400;"></span></a></li>
+				<li><a href="#" data-value="LightPink"><span
+						class="demoColor" style="background: #00726d;"></span></a></li>
+				<li><a href="#" data-value="LightBlue"><span
+						class="demoColor" style="background: #2b8be9;"></span></a></li>
 
-         </ul>
-     </div>
-      <hr>
+			</ul>
+		</div>
+		<hr>
 
-        <div class="mkSpace">
-          <a href="#" id="demoReset" class="btn ct-btn--o btn-default btn-block demo-reset"><span>DEFAULT</span></a>
-        </div>
-    </div>
+		<div class="mkSpace">
+			<a href="#" id="demoReset"
+				class="btn ct-btn--o btn-default btn-block demo-reset"><span>DEFAULT</span></a>
+		</div>
+	</div>
 
-    <div class="easyBox">
-        <div class="mkSpace">
-            <div class="title">
-                <label>Dropdown Style</label>
-            </div>
-            <div class="switch-animations">
-                <div class="select">
-                    <select id="dropdownSelect" onchange="selectDropdown()">
-                        <option value="ct-navbar--fadeInLeft">fadeInLeft</option>
-                        <option value="ct-navbar--fadeInRight">fadeInRight</option>
-                        <option value="ct-navbar--fadeIn">fadeIn</option>
-                        <option value="ct-navbar--fadeInDown">fadeInDown</option>
-                        <option value="ct-navbar--fadeInUp">fadeInUp</option>
-                        <option value="ct-navbar--pulse">pulse</option>
-                        <option value="ct-navbar--bounceIn">bounceIn</option>
-                        <option value="ct-navbar--bounceInLeft">bounceInLeft</option>
-                        <option value="ct-navbar--bounceInRight">bounceInRight</option>
-                        <option value="ct-navbar--flipInX">flipInX</option>
-                        <option value="ct-navbar--flipInY">flipInY</option>
-                        <option value="ct-navbar--zoomIn">zoomIn</option>
-                        <option value="ct-navbar--zoomInDown">zoomInDown</option>
-                        <option value="ct-navbar--zoomInUp">zoomInUp</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- 
+	<div class="easyBox">
+		<div class="mkSpace">
+			<div class="title">
+				<label>Dropdown Style</label>
+			</div>
+			<div class="switch-animations">
+				<div class="select">
+					<select id="dropdownSelect" onchange="selectDropdown()">
+						<option value="ct-navbar--fadeInLeft">fadeInLeft</option>
+						<option value="ct-navbar--fadeInRight">fadeInRight</option>
+						<option value="ct-navbar--fadeIn">fadeIn</option>
+						<option value="ct-navbar--fadeInDown">fadeInDown</option>
+						<option value="ct-navbar--fadeInUp">fadeInUp</option>
+						<option value="ct-navbar--pulse">pulse</option>
+						<option value="ct-navbar--bounceIn">bounceIn</option>
+						<option value="ct-navbar--bounceInLeft">bounceInLeft</option>
+						<option value="ct-navbar--bounceInRight">bounceInRight</option>
+						<option value="ct-navbar--flipInX">flipInX</option>
+						<option value="ct-navbar--flipInY">flipInY</option>
+						<option value="ct-navbar--zoomIn">zoomIn</option>
+						<option value="ct-navbar--zoomInDown">zoomInDown</option>
+						<option value="ct-navbar--zoomInUp">zoomInUp</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 
     <div class="easyBox">
         <div class="mkSpace">
         <div class=" title">

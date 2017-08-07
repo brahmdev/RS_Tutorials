@@ -118,8 +118,8 @@ $(document).ready(
 							/*"language": {
 					            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Hindi.json"
 					        },*/
-							//scrollY:        '50vh',
-					        //scrollCollapse: true,
+							scrollY:        '27vh',
+					        scrollCollapse: true,
 							/*
 							 * processing: true, serverSide: true,
 							 */

@@ -18,9 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devops.dev.dao.ClassLevelDao;
 import com.devops.dev.domainObject.ClassLevel;
+import com.devops.dev.domainObject.ClassLevelType;
+import com.devops.dev.domainObject.DropDownJSONType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 @RestController
 public class ClassLevelController {
@@ -117,4 +120,28 @@ public class ClassLevelController {
 			System.out.println(classLevel.getClassLevelId() + " : " + classLevel.getDescription());
 		}
 	}
+	
+	@RequestMapping("/getClassNameList")
+	public String getBoards() throws JsonProcessingException {
+
+		List<ClassLevelType> classLevelTypeList = new ArrayList<ClassLevelType>();
+		classLevelTypeList = classLevelDao.getAllClassLevelType();
+		List<String> addedClassName = new ArrayList<String>();
+		List<DropDownJSONType> jsonDropDownList = new ArrayList<DropDownJSONType>();
+		for(ClassLevelType classLevelType : classLevelTypeList) {
+			if(!addedClassName.contains(classLevelType.getClassName())) {
+				DropDownJSONType json = new DropDownJSONType();
+				json.setValue(String.valueOf(classLevelType.getClassName()));
+				json.setLabel(classLevelType.getClassName());
+				jsonDropDownList.add(json);
+			}
+			addedClassName.add(classLevelType.getClassName());
+		}
+		
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(jsonDropDownList);
+		return jsonInString;
+	}
+	
 }

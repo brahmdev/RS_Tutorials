@@ -9,7 +9,9 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.devops.dev.domainObject.Board;
 import com.devops.dev.domainObject.ClassLevel;
+import com.devops.dev.domainObject.ClassLevelType;
 
 @Repository
 @Transactional
@@ -49,5 +51,11 @@ public class ClassLevelDao {
 	public void update(ClassLevel classLevel) {
 		getSession().update(classLevel);
 		return;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<ClassLevelType> getAllClassLevelType() {
+		// TODO Auto-generated method stub
+		return getSession().createQuery("from ClassLevelType").list();
 	}
 }

@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="ct-u-displayTableVertical text-capitalize">
 				<div class="ct-u-displayTableCell">
-					<span class="ct-u-textBig"> History, Mission &amp;
+					<span class="ct-u-textNormal"> History, Mission &amp;
 					Vision </span>
 				</div>
 				<div class="ct-u-displayTableCell text-right">

@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="ct-u-displayTableVertical text-capitalize">
 			<div class="ct-u-displayTableCell">
-				<span class="ct-u-textBig">Boards</span>
+				<span class="ct-u-textNormal">Boards</span>
 			</div>
 			<div class="ct-u-displayTableCell text-right">
 				<span class="ct-u-textNormal ct-u-textItalic"> <a
@@ -14,7 +14,7 @@
 	</div>
 </div>
 <br>
-<table id="boardTable" class="table table-striped table-bordered">
+<table id="boardTable" class="table table-striped table-bordered" style="height: 180px;">
 	<thead>
 		<tr>
 			<th>Board Id</th>

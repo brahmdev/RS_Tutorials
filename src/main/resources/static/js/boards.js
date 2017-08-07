@@ -49,8 +49,11 @@ $(document).ready(
 			table = $('#boardTable').DataTable(
 					{
 						lengthChange : true,
+						paging : false,
 						/*processing: true,
 				        serverSide: true,*/
+						scrollY:        '40vh',
+				        scrollCollapse: true,
 						ajax : {
 							type : 'POST',
 							url : "boardList.do",

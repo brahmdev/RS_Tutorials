@@ -51,7 +51,7 @@ public class Subject implements java.io.Serializable {
 	}
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "class_level_type_id")
+	@JoinColumn(name = "class_level_type_id" , nullable = false)
 	public ClassLevelType getClassLevelType() {
 		return this.classLevelType;
 	}

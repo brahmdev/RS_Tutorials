@@ -4397,7 +4397,7 @@ Copyright (c) 2015 Daniel Eden
   width: 100%;
 }
 .ct-u-displayTableVertical {
-  height: 100%;
+  height: 62px;
 }
 .ct-u-displayTableVertical .ct-u-displayTableCell {
   vertical-align: middle;
@@ -7997,6 +7997,7 @@ html {
 body {
   /*color: #2d2d2d;*/
   font-size: 12px;
+  overflow-x: hidden;
 }
 .ct-pageWrapper {
   background-color: #fff;
@@ -8799,213 +8800,6 @@ header .ct-showcaseBox--withImagePerson .ct-u-displayTableCell:first-child {
 .modal-header .close:hover {
   color: #f4f4f4;
   background-color: #82b540;
-}
-footer {
-  color: #fff;
-}
-footer h3 {
-  font-size: 25px;
-}
-footer P {
-  font-family: "Lato", sans-serif;
-  line-height: 25px;
-}
-footer a {
-  color: #fff;
-}
-footer ul li a {
-  font-size: 16px;
-}
-footer img {
-  max-width: none;
-}
-footer .ct-copyright li {
-  line-height: 15px;
-  padding-left: 8px;
-  font-weight: 300;
-}
-footer .ct-copyright li:first-child {
-  border-right: 1px solid #82b540;
-  padding-left: 5px;
-  padding-right: 12px;
-}
-footer .ct-navbar--footer li {
-  padding: 0;
-}
-footer .ct-navbar--footer li a {
-  padding: 0 20px;
-  line-height: 28px;
-}
-footer .ct-navbar--footer li a:hover {
-  text-decoration: underline;
-}
-.ct-prefooter {
-  background-color: #2d2d2d;
-}
-.ct-prefooter a {
-  font-weight: 300;
-}
-.ct-prefooter .media-object {
-  margin-top: 7px;
-}
-.ct-prefooter .flickr_badge {
-  margin-left: -7px;
-}
-.widget-flickr .widget-inner .flickr_badge_image {
-  float: left;
-  height: 80px;
-  width: 80px;
-  padding: 7px;
-}
-.widget-flickr .widget-inner .flickr_badge_image img {
-  height: 100%;
-  width: 100%;
-}
-.ct-footer {
-  padding: 48px 0;
-  background-color: #191919;
-}
-.ct-footer .ct-copyright,
-.ct-footer .ct-copyright a {
-  font-size: 20px;
-  color: #cfcfcf;
-}
-.ct-footer .ct-copyright a:hover,
-.ct-footer .ct-copyright a a:hover {
-  color: #82b540;
-}
-.ct-textInHover {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.widget-latestPosts .media:hover .ct-textInHover {
-  color: #82b540;
-}
-.widget-socialsFullWidth {
-  border-top: 1px solid #424242;
-  border-bottom: 1px solid #424242;
-}
-.widget-socialsFullWidth i {
-  font-size: 34px;
-  color: #575757;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  line-height: 124px;
-}
-.widget-socialsFullWidth a {
-  display: block;
-}
-.widget-socialsFullWidth a:hover i {
-  color: #82b540;
-}
-.widget-links ul li a {
-  line-height: 30px;
-  display: inline-block;
-  width: 80%;
-}
-.ct-hoverImage--rectangle img {
-  border: 2px solid #2d2d2d;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.ct-hoverImage--rectangle:hover img {
-  border: 2px solid #82b540;
-}
-.ct-hoverImage--rectangle:hover a {
-  color: #fff;
-}
-.ct-site--map {
-  color: #fff;
-  padding: 18px 0;
-}
-.ct-site--map span {
-  line-height: 33px;
-}
-.ct-site--map span a {
-  color: #fff;
-}
-.ct-site--map span a:hover {
-  color: inherit;
-}
-.ct-priceBox,
-.ct-textBox,
-.ct-sidebarNavigation {
-  border: 1px solid #e7eddf;
-  background-color: #fff;
-}
-.ct-textBox {
-  font-family: "Open Sans", sans-serif;
-  padding: 32px 31px 32px 35px ;
-}
-.ct-textBox p {
-  line-height: 30px;
-  font-weight: 400;
-}
-.ct-textBox li {
-  font-size: 16px;
-  line-height: 33px;
-}
-.ct-textBox a {
-  color: #82b540;
-}
-.ct-textBox a:hover {
-  color: inherit;
-}
-.ct-textBox .ct-productBox .ct-productDescription a {
-  color: #2d2d2d;
-}
-.ct-textBox--thin {
-  padding: 0;
-}
-.ct-textBox--heading {
-  padding: 21px 23px;
-  font-family: "Lato", sans-serif;
-  position: relative;
-  border-bottom: 1px solid #e7eddf;
-}
-.ct-textBox--heading span {
-  color: #fff;
-}
-.ct-textBox--withNumber {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  right: 23px;
-  background-color: #82b540;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-.ct-textBox--withNumber span {
-  position: relative;
-  font-size: 20px;
-}
-.ct-textBox--price {
-  font-size: 20px;
-}
-.ct-badgeBox {
-  padding: 42px;
-}
-.ct-badgeBox .ct-iconBox {
-  display: inline-block;
-  margin: 17px;
-}
-.ct-badgeBox .ct-iconBox:hover .ct-icon {
-  background-color: #2d2d2d;
-}
-.ct-priceBox {
-  font-family: inherit;
-  padding: 0;
-  /*border-top: 3px solid #282828;*/
 }
 .ct-priceBox .ct-priceBox-section {
   padding: 35px 15px;
@@ -10809,4 +10603,13 @@ blockquote {
 
 .light-green {
 	background:  #99ff66;
+}
+
+footer {
+    /*position: fixed;*/
+    height: 10px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+	/*padding: 45px 0px 0px 0px;*/
 }

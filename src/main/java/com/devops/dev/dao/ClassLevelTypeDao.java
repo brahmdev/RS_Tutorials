@@ -66,4 +66,14 @@ public class ClassLevelTypeDao {
 		return getSession().createQuery("from ClassLevel").list();
 	}
 
+	public ClassLevelType getClassLevelType(int classLevelId, int boardId, String className, String language) {
+		// TODO Auto-generated method stub
+		return (ClassLevelType) getSession().createQuery("from ClassLevelType where className = :className and language = :language and classLevel.classLevelId = :classLevelId and board.boardId = :boardId")
+				.setParameter("className", className)
+				.setParameter("language", language)
+				.setParameter("boardId", boardId)
+				.setParameter("classLevelId", classLevelId)
+				.uniqueResult();
+	}
+
 }

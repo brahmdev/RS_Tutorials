@@ -27,8 +27,8 @@ public class ClassLevelType implements java.io.Serializable {
 	private Board board;
 	private String className;
 	private String language;
-	@JsonIgnore
-	private Set<Subject> subjects = new HashSet<Subject>(0);
+	//@JsonIgnore
+	//private Set<Subject> subjects = new HashSet<Subject>(0);
 	private Set<ClassCalendar> classCalendars = new HashSet<ClassCalendar>(0);
 	private Set<LectureSchedule> lectureSchedules = new HashSet<LectureSchedule>(0);
 	private Set<StudentDetail> studentDetails = new HashSet<StudentDetail>(0);
@@ -45,21 +45,20 @@ public class ClassLevelType implements java.io.Serializable {
 	}
 
 	public ClassLevelType(int classLevelTypeId, ClassLevel classLevel, Board board, String className, String language,
-			Set<Subject> subjects, Set<ClassCalendar> classCalendars, Set<LectureSchedule> lectureSchedules,
+			/*Set<Subject> subjects,*/ Set<ClassCalendar> classCalendars, Set<LectureSchedule> lectureSchedules,
 			Set<StudentDetail> studentDetails) {
 		this.classLevelTypeId = classLevelTypeId;
 		this.classLevel = classLevel;
 		this.board = board;
 		this.className = className;
 		this.language = language;
-		this.subjects = subjects;
+		//this.subjects = subjects;
 		this.classCalendars = classCalendars;
 		this.lectureSchedules = lectureSchedules;
 		this.studentDetails = studentDetails;
 	}
 
 	@Id
-
 	@Column(name = "class_level_type_id", unique = true, nullable = false)
 	public int getClassLevelTypeId() {
 		return this.classLevelTypeId;
@@ -107,14 +106,14 @@ public class ClassLevelType implements java.io.Serializable {
 		this.language = language;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "classLevelType")
+	/*@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "classLevelType")
 	public Set<Subject> getSubjects() {
 		return this.subjects;
 	}
 
 	public void setSubjects(Set<Subject> subjects) {
 		this.subjects = subjects;
-	}
+	}*/
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "classLevelType")
 	public Set<ClassCalendar> getClassCalendars() {
