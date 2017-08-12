@@ -2,6 +2,7 @@ package com.devops.dev.domainObject;
 // Generated 1 May, 2017 6:29:41 PM by Hibernate Tools 3.2.2.GA
 
 import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,6 +22,7 @@ public class Chapter implements java.io.Serializable {
 
 	private int chapterId;
 	private Users users;
+	
 	private Subject subject;
 	private String chapterNumber;
 	private String chapterName;
@@ -64,8 +66,8 @@ public class Chapter implements java.io.Serializable {
 		this.chapterId = chapterId;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "taken_bye")
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "taken_by")
 	public Users getUsers() {
 		return this.users;
 	}

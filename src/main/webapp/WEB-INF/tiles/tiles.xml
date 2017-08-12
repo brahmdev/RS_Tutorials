@@ -22,7 +22,7 @@
 	<!-- Pages -->
 
 	<definition name="dashBoard" extends="base.definition">
-		<put-attribute name="title" value="DashBoard - Master Calendar" />
+		<put-attribute name="title" value="DashBoard - R.S. Tutorials" />
 		<put-attribute name="body" value="/WEB-INF/views/dashBoard.jsp" />
 	</definition>
 	
@@ -94,6 +94,11 @@
 	<definition name="subject" extends="base.definition">
 		<put-attribute name="title" value="Subject Management" />
 		<put-attribute name="body" value="/WEB-INF/views/subject.jsp" />
+	</definition>
+	
+	<definition name="chapter" extends="base.definition">
+		<put-attribute name="title" value="Chapter Management" />
+		<put-attribute name="body" value="/WEB-INF/views/chapter.jsp" />
 	</definition>
 	
 </tiles-definitions>

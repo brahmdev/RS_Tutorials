@@ -10613,3 +10613,9 @@ footer {
     color: #fff;
 	/*padding: 45px 0px 0px 0px;*/
 }
+
+.fieldDisable {
+	/*background: #CCC;
+    color: #333;*/
+    pointer-events: none;
+}

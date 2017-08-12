@@ -9,8 +9,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.devops.dev.domainObject.Board;
-import com.devops.dev.domainObject.ClassLevel;
 import com.devops.dev.domainObject.Subject;
 
 @Repository
@@ -52,5 +50,12 @@ public class SubjectDao {
 	public void update(Subject subject) {
 		getSession().update(subject);
 		return;
+	}
+
+	public Subject getSubject(String subjectName, int classLevelTypeId) {
+		return (Subject) getSession().createQuery("from Subject where subjectName = :subjectName and classLevelType.classLevelTypeId = :classLevelTypeId")
+				.setParameter("subjectName", subjectName)
+				.setParameter("classLevelTypeId", classLevelTypeId)
+				.uniqueResult();
 	}
 }
