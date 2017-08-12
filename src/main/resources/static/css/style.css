@@ -4969,8 +4969,8 @@ nav.navbar .navbar-nav .dropdown-menu {
   padding: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0;
-  border: none;
+  border-radius: 14px;
+  /*border: none;*/
   list-style: none;
 }
 nav.navbar .navbar-nav .dropdown-menu li a {

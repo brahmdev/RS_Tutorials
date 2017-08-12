@@ -22,25 +22,99 @@
 					<li><a href="#">Testimonials</a></li>
 				</ul></li>
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
-				<li class="dropdown"><a>Management</a>
-					<ul class="dropdown-menu">
-						<li><a href="admin/calendar.do">Event</a></li>
-						<li><a href="admin/calendar.do">Student</a></li>
-						<li><a href="admin/calendar.do">Staff</a></li>
-						<li><a href="admin/calendar.do">Attendance</a></li>
-					</ul></li>
-
-				<li class="dropdown"><a>Settings</a>
-					<ul class="dropdown-menu">
-						<li><a href="calendar.do">Privileges</a></li>
-						<li><a href="calendar.do">Finance</a></li>
-						<li><a href="boards.do">Boards</a></li>
-						<li><a href="classLevel.do">Class Level</a></li>
-						<li><a href="classLevelType.do">Class Name(Standard)</a></li>
-						<li><a href="subject.do">Subject</a></li>
-						<li><a href="calendar.do">Visitors List</a></li>
-					</ul></li>
-			</sec:authorize>
+							<li class="dropdown yamm-fw"><a>Settings</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-3">
+														<a href="calendar.do">Event</a>
+														<a href="calendar.do">Student</a>
+														<a href="calendar.do">Staff</a>
+														<a href="calendar.do">Attendance</a>
+														<a href="calendar.do">Leaves</a>
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">Visitors List</a>
+														<a href="calendar.do">Privileges</a>
+														<a href="calendar.do">Feedback</a>
+														<a href="calendar.do">Reviews</a>
+														<a href="calendar.do">Complaints</a>
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">Set TimeTable</a>
+														<a href="calendar.do">View Class TimeTable</a>
+														<a href="calendar.do">View Teacher TimeTable</a>
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">Set Exam</a>
+														<a href="calendar.do">Set Question Paper</a>
+														<a href="calendar.do">Set Mark List</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown"><a>Academic</a>
+								<ul class="dropdown-menu">
+									<li><a href="boards.do">Boards</a></li>
+									<li><a href="classLevel.do">Class Level</a></li>
+									<li><a href="classLevelType.do">Class Name(Standard)</a></li>
+									<li><a href="subject.do">Subject</a></li>
+									<li><a href="chapter.do">Chapter</a></li>
+								</ul>
+							</li>
+							<li class="dropdown yamm-fw"><a>Finance</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-4">
+														<a href="calendar.do">Fees Collected</a>
+														<a href="calendar.do">Outstanding Fees</a>
+														<a href="calendar.do">Salary Payment</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Earnings</a>
+														<a href="calendar.do">Investments</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</sec:authorize>
+						<sec:authorize access="hasRole('ROLE_EMPLOYEE')">
+						<li class="dropdown yamm-fw"><a>Settings</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-4">
+														<a href="calendar.do">Set TimeTable</a>
+														<a href="calendar.do">View Class TimeTable</a>
+														<a href="calendar.do">View Teacher TimeTable</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Add Assignment</a>
+														<a href="calendar.do">Add Notes</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Leave History</a>
+														<a href="calendar.do">Leave Details</a>
+														<a href="calendar.do">Leave Application</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">My Attendance</a>
+														<a href="calendar.do">Attendance</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</sec:authorize>
 			<li class="dropdown"><a>About Us</a>
 				<ul class="dropdown-menu">
 					<li><a href="salientFeature.do">Salient Features</a></li>
@@ -132,34 +206,33 @@
 									<li>
 										<div class="yamm-content">
 											<div class="row">
-												<div class="col-sm-4">
+												<div class="col-sm-3">
 														<a href="calendar.do">Event</a>
 														<a href="calendar.do">Student</a>
 														<a href="calendar.do">Staff</a>
 														<a href="calendar.do">Attendance</a>
+														<a href="calendar.do">Leaves</a>
 												</div>
-												<div class="col-sm-4">
+												<div class="col-sm-3">
 														<a href="calendar.do">Visitors List</a>
 														<a href="calendar.do">Privileges</a>
-														<a href="calendar.do">Fee Details</a>
+														<a href="calendar.do">Feedback</a>
+														<a href="calendar.do">Reviews</a>
+														<a href="calendar.do">Complaints</a>
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">Set TimeTable</a>
+														<a href="calendar.do">View Class TimeTable</a>
+														<a href="calendar.do">View Teacher TimeTable</a>
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">Set Exam</a>
+														<a href="calendar.do">Set Question Paper</a>
+														<a href="calendar.do">Set Mark List</a>
 												</div>
 											</div>
 										</div>
 									</li>
-								</ul></li>
-							<li class="dropdown"><a>Time Table</a>
-								<ul class="dropdown-menu">
-										<li><a href="calendar.do">Set TimeTable</a></li>
-										<li><a href="calendar.do">View Class TimeTable</a></li>
-										<li><a href="calendar.do">View Teacher TimeTable</a></li>
-										<li><a href="calendar.do">Teacher Working TimeTable</a></li>
-								</ul>
-							</li>
-							<li class="dropdown"><a>Exams</a>
-								<ul class="dropdown-menu">
-											<li><a href="calendar.do">Set Exam</a></li>
-											<li><a href="calendar.do">Set Question Paper</a></li>
-											<li><a href="calendar.do">Set Mark List</a></li>
 								</ul>
 							</li>
 							<li class="dropdown"><a>Academic</a>
@@ -168,7 +241,58 @@
 									<li><a href="classLevel.do">Class Level</a></li>
 									<li><a href="classLevelType.do">Class Name(Standard)</a></li>
 									<li><a href="subject.do">Subject</a></li>
-								</ul></li>
+									<li><a href="chapter.do">Chapter</a></li>
+								</ul>
+							</li>
+							<li class="dropdown yamm-fw"><a>Finance</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-4">
+														<a href="calendar.do">Fees Collected</a>
+														<a href="calendar.do">Outstanding Fees</a>
+														<a href="calendar.do">Salary Payment</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Earnings</a>
+														<a href="calendar.do">Investments</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</sec:authorize>
+						<sec:authorize access="hasRole('ROLE_EMPLOYEE')">
+						<li class="dropdown yamm-fw"><a>Settings</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-sm-4">
+														<a href="calendar.do">Set TimeTable</a>
+														<a href="calendar.do">View Class TimeTable</a>
+														<a href="calendar.do">View Teacher TimeTable</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Add Assignment</a>
+														<a href="calendar.do">Add Notes</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">Leave History</a>
+														<a href="calendar.do">Leave Details</a>
+														<a href="calendar.do">Leave Application</a>
+												</div>
+												<div class="col-sm-4">
+														<a href="calendar.do">My Attendance</a>
+														<a href="calendar.do">Attendance</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
 						</sec:authorize>
 						<li class="dropdown"><a>About Us</a>
 							<ul class="dropdown-menu">
