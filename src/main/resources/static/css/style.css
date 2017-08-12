@@ -10619,3 +10619,7 @@ footer {
     color: #333;*/
     pointer-events: none;
 }
+
+.smartWizardTop {
+    margin-top: 109px;
+}

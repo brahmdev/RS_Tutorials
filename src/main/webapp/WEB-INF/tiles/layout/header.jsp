@@ -29,24 +29,26 @@
 											<div class="row">
 												<div class="col-sm-3">
 														<a href="calendar.do">Event</a>
-														<a href="calendar.do">Student</a>
-														<a href="calendar.do">Staff</a>
-														<a href="calendar.do">Attendance</a>
-														<a href="calendar.do">Leaves</a>
+														<a href="addStudent.do">Student</a>
+														<a href="addStaff.do">Staff</a>
+														<a href="addGurdian.do">Gurdian</a>
 												</div>
 												<div class="col-sm-3">
 														<a href="calendar.do">Visitors List</a>
 														<a href="calendar.do">Privileges</a>
+														<a href="calendar.do">Attendance</a>
+														<a href="calendar.do">Leaves</a>
+														
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">View Class TimeTable</a>
+														<!-- <a href="calendar.do">View Teacher TimeTable</a> -->
 														<a href="calendar.do">Feedback</a>
 														<a href="calendar.do">Reviews</a>
 														<a href="calendar.do">Complaints</a>
 												</div>
 												<div class="col-sm-3">
 														<a href="calendar.do">Set TimeTable</a>
-														<a href="calendar.do">View Class TimeTable</a>
-														<a href="calendar.do">View Teacher TimeTable</a>
-												</div>
-												<div class="col-sm-3">
 														<a href="calendar.do">Set Exam</a>
 														<a href="calendar.do">Set Question Paper</a>
 														<a href="calendar.do">Set Mark List</a>
@@ -208,24 +210,26 @@
 											<div class="row">
 												<div class="col-sm-3">
 														<a href="calendar.do">Event</a>
-														<a href="calendar.do">Student</a>
-														<a href="calendar.do">Staff</a>
-														<a href="calendar.do">Attendance</a>
-														<a href="calendar.do">Leaves</a>
+														<a href="addStudent.do">Student</a>
+														<a href="addStaff.do">Staff</a>
+														<a href="addGurdian.do">Gurdian</a>
 												</div>
 												<div class="col-sm-3">
 														<a href="calendar.do">Visitors List</a>
 														<a href="calendar.do">Privileges</a>
+														<a href="calendar.do">Attendance</a>
+														<a href="calendar.do">Leaves</a>
+														
+												</div>
+												<div class="col-sm-3">
+														<a href="calendar.do">View Class TimeTable</a>
+														<!-- <a href="calendar.do">View Teacher TimeTable</a> -->
 														<a href="calendar.do">Feedback</a>
 														<a href="calendar.do">Reviews</a>
 														<a href="calendar.do">Complaints</a>
 												</div>
 												<div class="col-sm-3">
 														<a href="calendar.do">Set TimeTable</a>
-														<a href="calendar.do">View Class TimeTable</a>
-														<a href="calendar.do">View Teacher TimeTable</a>
-												</div>
-												<div class="col-sm-3">
 														<a href="calendar.do">Set Exam</a>
 														<a href="calendar.do">Set Question Paper</a>
 														<a href="calendar.do">Set Mark List</a>

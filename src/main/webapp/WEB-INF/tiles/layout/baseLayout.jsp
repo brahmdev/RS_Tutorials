@@ -38,7 +38,10 @@
 	href="css/bootstrap-year-calendar.css">	
 	<link rel="stylesheet" type="text/css"
 	href="css/dataTables.bootstrap.css">
-
+<link rel="stylesheet" type="text/css" href="css/smart_wizard.css">
+<link rel="stylesheet" type="text/css" href="css/smart_wizard_theme_dots.css">
+<link rel="stylesheet" type="text/css" href="css/smart_wizard_theme_circles.css">
+<link rel="stylesheet" type="text/css" href="css/smart_wizard_theme_arrows.css">
 
 
 <!-- JavaScripts -->

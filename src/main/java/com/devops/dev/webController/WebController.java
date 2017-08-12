@@ -146,4 +146,22 @@ public class WebController {
 		logger.info("Welcome on chapter Management Page! The client locale is {}.", locale);
 		return "chapter";
 	}
+	
+	@RequestMapping(value = "/addStaff", method = RequestMethod.GET)
+	public String addStaff(Locale locale, Model model) {
+		logger.info("Welcome on chapter Management Page! The client locale is {}.", locale);
+		return "addStaff";
+	}
+	
+	@RequestMapping(value = "/addStudent", method = RequestMethod.GET)
+	public String addStudent(Locale locale, Model model) {
+		logger.info("Welcome on chapter Management Page! The client locale is {}.", locale);
+		return "addStudent";
+	}
+	
+	@RequestMapping(value = "/addGurdian", method = RequestMethod.GET)
+	public String addGurdian(Locale locale, Model model) {
+		logger.info("Welcome on chapter Management Page! The client locale is {}.", locale);
+		return "addGurdian";
+	}
 }

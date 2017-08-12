@@ -101,4 +101,19 @@
 		<put-attribute name="body" value="/WEB-INF/views/chapter.jsp" />
 	</definition>
 	
+	<definition name="addStaff" extends="base.definition">
+		<put-attribute name="title" value="Add Staff" />
+		<put-attribute name="body" value="/WEB-INF/views/addStaff.jsp" />
+	</definition>
+	
+	<definition name="addStudent" extends="base.definition">
+		<put-attribute name="title" value="Add Student" />
+		<put-attribute name="body" value="/WEB-INF/views/addStudent.jsp" />
+	</definition>
+	
+	<definition name="addGurdian" extends="base.definition">
+		<put-attribute name="title" value="Add Gurdian" />
+		<put-attribute name="body" value="/WEB-INF/views/addGurdian.jsp" />
+	</definition>
+	
 </tiles-definitions>
