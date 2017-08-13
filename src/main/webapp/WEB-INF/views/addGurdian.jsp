@@ -30,6 +30,7 @@
             <div>
                 <div id="step-1">
                     <h3>Student Personal Details</h3>
+                     <hr>
                     <div id="form-step-0" role="form" data-toggle="validator">
                         <div class="form-group">
                         	<label for="firstName">First Name:</label>

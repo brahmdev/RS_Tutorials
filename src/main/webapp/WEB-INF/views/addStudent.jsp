@@ -30,6 +30,7 @@
             <div>
                 <div id="step-1">
                     <h3>Student Personal Details</h3>
+                    <hr>
                     <div id="form-step-0" role="form" data-toggle="validator">
                         <div class="form-group">
                         	<label for="firstName">First Name:</label>
@@ -62,9 +63,9 @@
                 <div id="step-2">
                     <h3>Students Academic Details</h3>
                     <div id="form-step-1" role="form" data-toggle="validator">
-                        <div class="form-group">
+                        <div class="form-group padding10px">
                             <label for="board">Board:</label>
-                            <select class="form-control" name="name" id="board" required></select>
+                            <select class="form-control" name="board" id="board" required></select>
                             <div class="help-block with-errors"></div>
                             
                             <label for="classLevel">Class Level:</label>
@@ -78,8 +79,6 @@
                             <label for="language">Language:</label>
                             <select class="form-control" name="language" id="language" required></select>
                             <div class="help-block with-errors"></div>
-                            
-                            
                         </div>
                     </div>
                 </div>
