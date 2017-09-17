@@ -1,7 +1,9 @@
 package com.devops.dev.config;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +16,8 @@ import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
+import com.devops.dev.util.ROLE;
 
 @Configuration
 public class LoginSuccessHandler
@@ -52,12 +56,13 @@ implements AuthenticationSuccessHandler {
       boolean isAdmin = false;
       Collection<? extends GrantedAuthority> authorities
        = authentication.getAuthorities();
+      List<String> roleList = getAvailableRoles();
       for (GrantedAuthority grantedAuthority : authorities) {
-          if (grantedAuthority.getAuthority().equals("ROLE_USER")) {
-              isUser = true;
-              break;
-          } else if (grantedAuthority.getAuthority().equals("ROLE_ADMIN")) {
+          if (grantedAuthority.getAuthority().equals("ROLE_ADMIN")) {
               isAdmin = true;
+              break;
+          } else if (roleList.contains(grantedAuthority.getAuthority())) {
+              isUser = true;
               break;
           }
       }
@@ -84,5 +89,13 @@ implements AuthenticationSuccessHandler {
   }
   protected RedirectStrategy getRedirectStrategy() {
       return redirectStrategy;
+  }
+  
+  public List<String> getAvailableRoles() {
+	  List<String> roleList = new ArrayList<String>();
+	  for(ROLE role : ROLE.values()) {
+		  roleList.add(role.toString());
+	  }
+	  return roleList;
   }
 }

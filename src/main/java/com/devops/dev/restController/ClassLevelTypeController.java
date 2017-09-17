@@ -14,6 +14,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devops.dev.dao.ClassLevelTypeDao;
@@ -160,6 +161,24 @@ public class ClassLevelTypeController {
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
 		String jsonInString = mapper.writeValueAsString(jsonDropDownLoist);
+		return jsonInString;
+	}
+	
+	@RequestMapping("/getFees")
+	public String getFees(/*@RequestParam("boardId") String boardId, @RequestParam("classLevelId") String classLevelId, @RequestParam("standard") String className, @RequestParam("language") String language*/ @RequestBody String data) throws IOException {
+
+		ObjectMapper mapper = new ObjectMapper();
+		JsonNode node = mapper.readTree(data);
+		String boardId = node.get("boardId").asText();
+		String classLevelId = node.get("classLevelId").asText();
+		String className = node.get("standard").asText();
+		String language = node.get("language").asText();
+		ClassLevelType classLevelType = classLevelTypeDao.getClassLevelType(Integer.valueOf(classLevelId), Integer.valueOf(boardId), className, language);
+		
+		Map<String, String> classLevelTypeJSONDataMap = new HashMap<String, String>();
+		classLevelTypeJSONDataMap.put("fees", String.valueOf(classLevelType.getFees()));
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(classLevelTypeJSONDataMap);
 		return jsonInString;
 	}
 }

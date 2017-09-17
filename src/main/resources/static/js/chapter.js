@@ -230,10 +230,17 @@ $(document).ready(
 				table.buttons().container().appendTo(
 						$('.col-sm-6:eq(0)', table.table().container()));
 				
-				editor.field( 'chapterId' ).disable();
-				editor.field( 'subject.classLevelType.board.boardId' ).disable();
-				editor.field( 'subject.classLevelType.classLevel.classLevelId' ).disable();
-				editor.field( 'subject.classLevelType.className' ).disable();
+				editor.on( 'onInitEdit', function () {
+					editor.disable('chapterId');
+					editor.disable('subject.classLevelType.board.boardId');
+					editor.disable('subject.classLevelType.classLevel.classLevelId');
+					editor.disable('subject.classLevelType.className');
+					/*editor.field( 'chapterId' ).disable();
+					editor.field( 'subject.classLevelType.board.boardId' ).disable();
+					editor.field( 'subject.classLevelType.classLevel.classLevelId' ).disable();
+					editor.field( 'subject.classLevelType.className' ).disable();*/
+				} );
+				
 				
 			}
 			

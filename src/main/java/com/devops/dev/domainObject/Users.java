@@ -1,8 +1,10 @@
 package com.devops.dev.domainObject;
 // Generated 1 May, 2017 6:29:41 PM by Hibernate Tools 3.2.2.GA
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +12,8 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
@@ -23,43 +27,59 @@ public class Users implements java.io.Serializable {
 	private String username;
 	private String password;
 	private byte enabled;
-	@JsonBackReference(value="userRoles")
-	private Set<UserRoles> userRoleses = new HashSet<UserRoles>(0);
-	private Set<Feedback> feedbacksForGivenBy = new HashSet<Feedback>(0);
-	private Set<StudentDetail> studentDetails = new HashSet<StudentDetail>(0);
-	private Set<Feedback> feedbacksForGivenTo = new HashSet<Feedback>(0);
+	private String email;
+	private String mobile;
+	private String firstName;
+	private String lastName;
+	private Date dob;
+	private String address;
 	private Set<LectureSchedule> lectureSchedules = new HashSet<LectureSchedule>(0);
-	@JsonBackReference(value="chapters")
+	@JsonBackReference(value = "chapters")
 	private Set<Chapter> chapters = new HashSet<Chapter>(0);
 	private Set<TakeUpDefaulterCalendar> takeUpDefaulterCalendars = new HashSet<TakeUpDefaulterCalendar>(0);
+	@JsonBackReference(value = "userRoles")
+	private Set<UserRoles> userRoleses = new HashSet<UserRoles>(0);
+	private Set<Feedback> feedbacksForGivenTo = new HashSet<Feedback>(0);
+	private Set<Feedback> feedbacksForGivenBy = new HashSet<Feedback>(0);
+	private Set<StudentDetail> studentDetails = new HashSet<StudentDetail>(0);
 
 	public Users() {
 	}
 
-	public Users(String username, String password, byte enabled) {
+	public Users(String username, String password, byte enabled, String firstname, String address) {
 		this.username = username;
 		this.password = password;
 		this.enabled = enabled;
+		this.firstName = firstname;
+		this.address = address;
 	}
 
-	public Users(String username, String password, byte enabled, Set<UserRoles> userRoleses,
-			Set<Feedback> feedbacksForGivenBy, Set<StudentDetail> studentDetails, Set<Feedback> feedbacksForGivenTo,
-			Set<LectureSchedule> lectureSchedules, Set<Chapter> chapters,
-			Set<TakeUpDefaulterCalendar> takeUpDefaulterCalendars) {
+	public Users(String username, String password, byte enabled, String email, String mobile, String firstname,
+			String lastname, Date dob, String address, Set<LectureSchedule> lectureSchedules, Set<Chapter> chapters,
+			Set<TakeUpDefaulterCalendar> takeUpDefaulterCalendars, Set<UserRoles> userRoleses,
+			Set<Feedback> feedbacksForGivenTo, Set<Feedback> feedbacksForGivenBy, Set<Feedback> feedbacksForGivenBy_1,
+			Set<UserRoles> userRoleses_1, Set<StudentDetail> studentDetails, Set<Chapter> chapters_1,
+			Set<StudentDetail> studentDetails_1, Set<Feedback> feedbacksForGivenTo_1, Set<Chapter> chapters_2,
+			Set<LectureSchedule> lectureSchedules_1, Set<TakeUpDefaulterCalendar> takeUpDefaulterCalendars_1) {
 		this.username = username;
 		this.password = password;
 		this.enabled = enabled;
-		this.userRoleses = userRoleses;
-		this.feedbacksForGivenBy = feedbacksForGivenBy;
-		this.studentDetails = studentDetails;
-		this.feedbacksForGivenTo = feedbacksForGivenTo;
+		this.email = email;
+		this.mobile = mobile;
+		this.firstName = firstname;
+		this.lastName = lastname;
+		this.dob = dob;
+		this.address = address;
 		this.lectureSchedules = lectureSchedules;
 		this.chapters = chapters;
 		this.takeUpDefaulterCalendars = takeUpDefaulterCalendars;
+		this.userRoleses = userRoleses;
+		this.feedbacksForGivenTo = feedbacksForGivenTo;
+		this.feedbacksForGivenBy = feedbacksForGivenBy;
+		this.studentDetails = studentDetails;
 	}
 
 	@Id
-
 	@Column(name = "username", unique = true, nullable = false, length = 45)
 	public String getUsername() {
 		return this.username;
@@ -87,40 +107,59 @@ public class Users implements java.io.Serializable {
 		this.enabled = enabled;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "users")
-	public Set<UserRoles> getUserRoleses() {
-		return this.userRoleses;
+	@Column(name = "email", length = 75)
+	public String getEmail() {
+		return this.email;
 	}
 
-	public void setUserRoleses(Set<UserRoles> userRoleses) {
-		this.userRoleses = userRoleses;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "usersByGivenBy")
-	public Set<Feedback> getFeedbacksForGivenBy() {
-		return this.feedbacksForGivenBy;
+	@Column(name = "mobile", length = 10)
+	public String getMobile() {
+		return this.mobile;
 	}
 
-	public void setFeedbacksForGivenBy(Set<Feedback> feedbacksForGivenBy) {
-		this.feedbacksForGivenBy = feedbacksForGivenBy;
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "users")
-	public Set<StudentDetail> getStudentDetails() {
-		return this.studentDetails;
+	@Column(name = "firstname", nullable = false, length = 45)
+	public String getFirstName() {
+		return this.firstName;
 	}
 
-	public void setStudentDetails(Set<StudentDetail> studentDetails) {
-		this.studentDetails = studentDetails;
+	public void setFirstName(String firstname) {
+		this.firstName = firstname;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "usersByGivenTo")
-	public Set<Feedback> getFeedbacksForGivenTo() {
-		return this.feedbacksForGivenTo;
+	@Column(name = "lastname", length = 45)
+	public String getLastName() {
+		return this.lastName;
 	}
 
-	public void setFeedbacksForGivenTo(Set<Feedback> feedbacksForGivenTo) {
-		this.feedbacksForGivenTo = feedbacksForGivenTo;
+	public void setLastName(String lastname) {
+		this.lastName = lastname;
+	}
+
+	@Temporal(TemporalType.DATE)
+	@Column(name = "dob", length = 10)
+	public Date getDob() {
+		return this.dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	@Column(name = "address", nullable = false, length = 150)
+	public String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "users")
@@ -149,5 +188,43 @@ public class Users implements java.io.Serializable {
 	public void setTakeUpDefaulterCalendars(Set<TakeUpDefaulterCalendar> takeUpDefaulterCalendars) {
 		this.takeUpDefaulterCalendars = takeUpDefaulterCalendars;
 	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "users")
+	public Set<UserRoles> getUserRoleses() {
+		return this.userRoleses;
+	}
+
+	public void setUserRoleses(Set<UserRoles> userRoleses) {
+		this.userRoleses = userRoleses;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "usersByGivenTo")
+	public Set<Feedback> getFeedbacksForGivenTo() {
+		return this.feedbacksForGivenTo;
+	}
+
+	public void setFeedbacksForGivenTo(Set<Feedback> feedbacksForGivenTo) {
+		this.feedbacksForGivenTo = feedbacksForGivenTo;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "usersByGivenBy")
+	public Set<Feedback> getFeedbacksForGivenBy() {
+		return this.feedbacksForGivenBy;
+	}
+
+	public void setFeedbacksForGivenBy(Set<Feedback> feedbacksForGivenBy) {
+		this.feedbacksForGivenBy = feedbacksForGivenBy;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "users")
+	public Set<StudentDetail> getStudentDetails() {
+		return this.studentDetails;
+	}
+
+	public void setStudentDetails(Set<StudentDetail> studentDetails) {
+		this.studentDetails = studentDetails;
+	}
+
+
 
 }

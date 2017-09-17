@@ -46,7 +46,7 @@
                             <div class="help-block with-errors"></div>
                             
                            <label for="postalAddress">Postal Address:</label>
-                           <textarea class="form-control" name="postalAddress" id="postalAddress" rows="5" placeholder="Postal Address..." required></textarea>
+                           <textarea class="form-control" name="address" id="address" rows="5" placeholder="Postal Address..." required></textarea>
                             <div class="help-block with-errors"></div>
                             
                         	<label for="mobile">Mobile:</label>

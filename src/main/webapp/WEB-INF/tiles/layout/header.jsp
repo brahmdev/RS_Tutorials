@@ -148,7 +148,7 @@
 								class="fa fa-user"></i></a></li>
 					</sec:authorize>
 					<sec:authorize access="isAuthenticated()">
-						<li style="padding-top:6px;">Welcome <b><c:out
+						<li style="padding-top:6px;width:250px;">Welcome <b><c:out
 									value="${pageContext.request.remoteUser}"></c:out></b></li>
 					</sec:authorize>
 				</ul>

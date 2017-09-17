@@ -27,24 +27,28 @@ public class ClassLevelType implements java.io.Serializable {
 	private Board board;
 	private String className;
 	private String language;
+	private int fees;
 	//@JsonIgnore
 	//private Set<Subject> subjects = new HashSet<Subject>(0);
+	@JsonIgnore
 	private Set<ClassCalendar> classCalendars = new HashSet<ClassCalendar>(0);
 	private Set<LectureSchedule> lectureSchedules = new HashSet<LectureSchedule>(0);
+	@JsonIgnore
 	private Set<StudentDetail> studentDetails = new HashSet<StudentDetail>(0);
 
 	public ClassLevelType() {
 	}
 
-	public ClassLevelType(int classLevelTypeId, ClassLevel classLevel, Board board, String className, String language) {
+	public ClassLevelType(int classLevelTypeId, ClassLevel classLevel, Board board, String className, String language, int fees) {
 		this.classLevelTypeId = classLevelTypeId;
 		this.classLevel = classLevel;
 		this.board = board;
 		this.className = className;
 		this.language = language;
+		this.fees = fees;
 	}
 
-	public ClassLevelType(int classLevelTypeId, ClassLevel classLevel, Board board, String className, String language,
+	public ClassLevelType(int classLevelTypeId, ClassLevel classLevel, Board board, String className, String language, int fees,
 			/*Set<Subject> subjects,*/ Set<ClassCalendar> classCalendars, Set<LectureSchedule> lectureSchedules,
 			Set<StudentDetail> studentDetails) {
 		this.classLevelTypeId = classLevelTypeId;
@@ -52,6 +56,7 @@ public class ClassLevelType implements java.io.Serializable {
 		this.board = board;
 		this.className = className;
 		this.language = language;
+		this.fees = fees;
 		//this.subjects = subjects;
 		this.classCalendars = classCalendars;
 		this.lectureSchedules = lectureSchedules;
@@ -140,6 +145,21 @@ public class ClassLevelType implements java.io.Serializable {
 
 	public void setStudentDetails(Set<StudentDetail> studentDetails) {
 		this.studentDetails = studentDetails;
+	}
+
+	/**
+	 * @return the fees
+	 */
+	@Column(name = "fees", nullable = true)
+	public int getFees() {
+		return fees;
+	}
+
+	/**
+	 * @param fees the fees to set
+	 */
+	public void setFees(int fees) {
+		this.fees = fees;
 	}
 
 }

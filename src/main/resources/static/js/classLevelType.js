@@ -102,7 +102,10 @@ $(document).ready(
 						type : "select",
 						options : [{"label":"Hindi", "value" : "Hindi"},
 						           {"label": "English", "value":"English"}]
-					} ],
+					}, {
+						label : "Fees:",
+						name : "fees"
+					}, ],
 					submitSuccess : function(e, json, data) {
 						alert(json);
 						table.ajax.reload();
@@ -144,6 +147,8 @@ $(document).ready(
 								data : "classLevel.description"
 							}, {
 								data : "language"
+							}, {
+								data : "fees"
 							} ],
 							select : true
 						});

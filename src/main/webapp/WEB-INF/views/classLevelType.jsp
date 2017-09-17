@@ -22,6 +22,7 @@
 			<th>Board Name</th>
 			<th>Class Level</th>
 			<th>Language</th>
+			<th>Fees</th>
 		</tr>
 	</thead>
 	<tfoot>
@@ -31,6 +32,7 @@
 			<th>Board Name</th>
 			<th>Class Level</th>
 			<th>Language</th>
+			<th>Fees</th>
 		</tr>
 	</tfoot>
 </table>
