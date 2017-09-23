@@ -116,4 +116,9 @@
 		<put-attribute name="body" value="/WEB-INF/views/addGurdian.jsp" />
 	</definition>
 	
+	<definition name="setQuestionPaper" extends="base.definition">
+		<put-attribute name="title" value="Set Question Paper" />
+		<put-attribute name="body" value="/WEB-INF/views/setQuestionPaper.jsp" />
+	</definition>
+	
 </tiles-definitions>

@@ -50,7 +50,7 @@
 												<div class="col-sm-3">
 														<a href="calendar.do">Set TimeTable</a>
 														<a href="calendar.do">Set Exam</a>
-														<a href="calendar.do">Set Question Paper</a>
+														<a href="setQuestionPaper.do">Set Question Paper</a>
 														<a href="calendar.do">Set Mark List</a>
 												</div>
 											</div>
@@ -231,7 +231,7 @@
 												<div class="col-sm-3">
 														<a href="calendar.do">Set TimeTable</a>
 														<a href="calendar.do">Set Exam</a>
-														<a href="calendar.do">Set Question Paper</a>
+														<a href="setQuestionPaper.do">Set Question Paper</a>
 														<a href="calendar.do">Set Mark List</a>
 												</div>
 											</div>

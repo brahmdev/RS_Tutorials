@@ -164,4 +164,12 @@ public class WebController {
 		logger.info("Welcome on chapter Management Page! The client locale is {}.", locale);
 		return "addGurdian";
 	}
+	
+	@RequestMapping(value = "/setQuestionPaper", method = RequestMethod.GET)
+	public String setQuestionPaper(Locale locale, Model model) {
+		logger.info("Welcome on Set Question Paper Page! The client locale is {}.", locale);
+		return "setQuestionPaper";
+	}
+	
+	
 }
