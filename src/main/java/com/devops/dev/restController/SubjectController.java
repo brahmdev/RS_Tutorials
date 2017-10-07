@@ -9,12 +9,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.devops.dev.domainObject.DropDownJSONType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.devops.dev.dao.ClassLevelTypeDao;
 import com.devops.dev.dao.SubjectDao;
@@ -115,5 +113,26 @@ public class SubjectController {
 		}
 	}
 
-	
+	@RequestMapping("/getSubjectNameListByStandard")
+	public String getSubjectNameListByStandard(@RequestParam("csrfmiddlewaretoken") String csrfmiddlewaretoken, @RequestParam("keyToSearch") String keyToSearch) throws JsonProcessingException {
+
+		List<Subject> classLevelTypeList = new ArrayList<Subject>();
+		classLevelTypeList = classLevelTypeDao.getSubjectForStandard(keyToSearch);
+		List<String> addedClassName = new ArrayList<String>();
+		List<DropDownJSONType> jsonDropDownList = new ArrayList<DropDownJSONType>();
+		for(Subject subject : classLevelTypeList) {
+			if(!addedClassName.contains(subject.getSubjectName())) {
+				DropDownJSONType json = new DropDownJSONType();
+				json.setValue(String.valueOf(subject.getSubjectId()));
+				json.setLabel(subject.getSubjectName());
+				jsonDropDownList.add(json);
+			}
+			addedClassName.add(subject.getSubjectName());
+		}
+
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(jsonDropDownList);
+		return jsonInString;
+	}
 }

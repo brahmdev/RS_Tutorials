@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import com.devops.dev.domainObject.Subject;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,4 +77,8 @@ public class ClassLevelTypeDao {
 				.uniqueResult();
 	}
 
+    public List<Subject> getSubjectForStandard(String classLevelTypeId) {
+		return (List<Subject>) getSession().createQuery("from Subject where classLevelType.classLevelTypeId = :classLevelTypeId").setParameter("classLevelTypeId", Integer.parseInt(classLevelTypeId))
+				.list();
+    }
 }

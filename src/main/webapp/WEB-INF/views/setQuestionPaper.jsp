@@ -22,24 +22,24 @@
 </div>
 <br>
 <div style="padding: 15px;  line-height:2.428571;">
-	<div class="col-xs-4 form-group">
+    <div class="col-xs-3 form-group">
+        <label for="paperName">Question Paper Name:</label>
+		<input class="form-control" name="paperName" id="paperName" placeholder="Question Paper Name">
+		</select>
+	</div>
+	<div class="col-xs-3 form-group">
 		<label for="board">Board:</label> 
 		<select class="form-control" id="board">
 		</select>
 	</div>
-	<div class="col-xs-4 form-group">
+	<div class="col-xs-3 form-group">
 		<label for="standard">Standard:</label> 
 		<select class="form-control" id="standard">
 		</select>
 	</div>
-	<div class="col-xs-4 form-group">
+	<div class="col-xs-3 form-group">
 		<label for="sel1">Subject:</label> 
-		<select class="form-control" id="sel1">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-		</select>
+		<select class="form-control" id="subject"></select>
 	</div>
 
 <div class="adjoined-bottom" style="height: 402px;">

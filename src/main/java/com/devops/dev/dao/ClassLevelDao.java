@@ -60,7 +60,7 @@ public class ClassLevelDao {
 	
 	@SuppressWarnings("unchecked")
 	public List<ClassLevelType> getClassLevelTypeForBoard(String boardId) {
-		return (List<ClassLevelType>) getSession().createQuery("from ClassLevelType where board.boardId = :boardId").setParameter("boardId", boardId)
+		return (List<ClassLevelType>) getSession().createQuery("from ClassLevelType where board.boardId = :boardId").setParameter("boardId", Integer.parseInt(boardId))
 		.list();
 	}
 	

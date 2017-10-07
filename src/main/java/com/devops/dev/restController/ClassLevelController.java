@@ -146,7 +146,7 @@ public class ClassLevelController {
 	}
 	
 	@RequestMapping("/getClassNameListByBoard")
-	public String getClassNameListByBoard(@RequestParam String csrfmiddlewaretoken, @RequestParam String keyToSearch) throws JsonProcessingException {
+	public String getClassNameListByBoard(@RequestParam("csrfmiddlewaretoken") String csrfmiddlewaretoken, @RequestParam("keyToSearch") String keyToSearch) throws JsonProcessingException {
 
 		List<ClassLevelType> classLevelTypeList = new ArrayList<ClassLevelType>();
 		classLevelTypeList = classLevelDao.getClassLevelTypeForBoard(keyToSearch);
@@ -155,7 +155,7 @@ public class ClassLevelController {
 		for(ClassLevelType classLevelType : classLevelTypeList) {
 			if(!addedClassName.contains(classLevelType.getClassName())) {
 				DropDownJSONType json = new DropDownJSONType();
-				json.setValue(String.valueOf(classLevelType.getClassName()));
+				json.setValue(String.valueOf(classLevelType.getClassLevelTypeId()));
 				json.setLabel(classLevelType.getClassName());
 				jsonDropDownList.add(json);
 			}
