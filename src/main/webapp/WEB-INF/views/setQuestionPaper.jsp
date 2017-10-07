@@ -23,21 +23,13 @@
 <br>
 <div style="padding: 15px;  line-height:2.428571;">
 	<div class="col-xs-4 form-group">
-		<label for="sel1">Board:</label> 
-		<select class="form-control" id="sel1">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
+		<label for="board">Board:</label> 
+		<select class="form-control" id="board">
 		</select>
 	</div>
 	<div class="col-xs-4 form-group">
-		<label for="sel1">Standard:</label> 
-		<select class="form-control" id="sel1">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
+		<label for="standard">Standard:</label> 
+		<select class="form-control" id="standard">
 		</select>
 	</div>
 	<div class="col-xs-4 form-group">

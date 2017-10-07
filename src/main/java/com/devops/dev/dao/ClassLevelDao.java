@@ -55,7 +55,13 @@ public class ClassLevelDao {
 
 	@SuppressWarnings("unchecked")
 	public List<ClassLevelType> getAllClassLevelType() {
-		// TODO Auto-generated method stub
 		return getSession().createQuery("from ClassLevelType").list();
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<ClassLevelType> getClassLevelTypeForBoard(String boardId) {
+		return (List<ClassLevelType>) getSession().createQuery("from ClassLevelType where board.boardId = :boardId").setParameter("boardId", boardId)
+		.list();
+	}
+	
 }

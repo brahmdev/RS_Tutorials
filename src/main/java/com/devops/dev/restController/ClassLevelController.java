@@ -14,6 +14,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.devops.dev.dao.ClassLevelDao;
@@ -122,10 +123,33 @@ public class ClassLevelController {
 	}
 	
 	@RequestMapping("/getClassNameList")
-	public String getBoards() throws JsonProcessingException {
+	public String getClassNameList() throws JsonProcessingException {
 
 		List<ClassLevelType> classLevelTypeList = new ArrayList<ClassLevelType>();
 		classLevelTypeList = classLevelDao.getAllClassLevelType();
+		List<String> addedClassName = new ArrayList<String>();
+		List<DropDownJSONType> jsonDropDownList = new ArrayList<DropDownJSONType>();
+		for(ClassLevelType classLevelType : classLevelTypeList) {
+			if(!addedClassName.contains(classLevelType.getClassName())) {
+				DropDownJSONType json = new DropDownJSONType();
+				json.setValue(String.valueOf(classLevelType.getClassName()));
+				json.setLabel(classLevelType.getClassName());
+				jsonDropDownList.add(json);
+			}
+			addedClassName.add(classLevelType.getClassName());
+		}
+		
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+		String jsonInString = mapper.writeValueAsString(jsonDropDownList);
+		return jsonInString;
+	}
+	
+	@RequestMapping("/getClassNameListByBoard")
+	public String getClassNameListByBoard(@RequestParam String csrfmiddlewaretoken, @RequestParam String keyToSearch) throws JsonProcessingException {
+
+		List<ClassLevelType> classLevelTypeList = new ArrayList<ClassLevelType>();
+		classLevelTypeList = classLevelDao.getClassLevelTypeForBoard(keyToSearch);
 		List<String> addedClassName = new ArrayList<String>();
 		List<DropDownJSONType> jsonDropDownList = new ArrayList<DropDownJSONType>();
 		for(ClassLevelType classLevelType : classLevelTypeList) {
