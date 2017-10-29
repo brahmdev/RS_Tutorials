@@ -474,7 +474,7 @@
 													<tbody>
 														<tr>
 															<td>NEET</td>
-															<td>305,000/-</td>
+															<td>35,000/-</td>
 														</tr>
 														<tr>
 															<td>JEE</td>

@@ -13,13 +13,9 @@
 								<div class="col-md-6 col-md-offset-6">
 									<h3
 										class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated"
-										data-fx="bounceInDown" data-time="200">Created For
-										Education Business</h3>
+										data-fx="bounceInDown" data-time="200">We Understands Our Responsibility</h3>
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
-										data-fx="bounceInRight" data-time="400">The European
-										languages are members of the same family. Their separ
-										vocabulary. The languages only differ in their grammar, their
-										on and more common words. If several languages</p>
+										data-fx="bounceInRight" data-time="400">Teaching is 24 Hours / 7 Days a week job because Teachers never stop caring about their Students</p>
 									<a class="text-uppercase btn btn-primary btn-lg animated"
 										data-fx="bounceInUp" data-time="200" href="course-single.html">view
 										courses</a>
@@ -37,14 +33,9 @@
 								<div class="col-md-6">
 									<h3
 										class="text-capitalize ct-fw-900 ct-u-marginBottom40 animated"
-										data-fx="bounceInDown" data-time="200">Created For
-										Education Business</h3>
+										data-fx="bounceInDown" data-time="200">Be Simple</h3>
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
-										data-fx="bounceInDown" data-time="400">The European
-										languages are members of the same family. Their separ
-										vocabulary. The languages only differ in their grammar, their
-										pronunci on and more common words. If several languages
-										coalesce, vidual languages.</p>
+										data-fx="bounceInDown" data-time="400">If you cant Explain it simply, you dont understand it well enough</p>
 									<a href="course-single.html"
 										class="text-uppercase btn btn-primary btn-lg animated"
 										data-fx="bounceInDown" data-time="600">view courses</a> <a
@@ -65,14 +56,10 @@
 								<div class="col-md-6 ct-u-colorWhite">
 									<div class="ct-darkBackground ct-u-marginBottom40 animated"
 										data-fx="fadeInLeft" data-time="200">
-										<h3 class="text-capitalize ct-fw-900">Created For
-											Education Business</h3>
+										<h3 class="text-capitalize ct-fw-900">Education is Biggest Saving</h3>
 									</div>
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
-										data-fx="fadeInLeft" data-time="800">The European
-										languages are members of the same family. Their separ
-										vocabulary. The languages only differ in their grammar, their
-										on and more common words. If several languages</p>
+										data-fx="fadeInLeft" data-time="800">A good Education is like a saving account; the more you put into it, the richer you are.</p>
 									<a href="course-single.html"
 										class="text-uppercase btn btn-dark btn-lg animated"
 										data-fx="fadeInLeft" data-time="1200">view courses</a>
@@ -170,7 +157,7 @@
                         </div>
 
                         <div class="ct-icon--description">
-                            <h4 class="ct-u-colorMotive ct-fw-600 ct-u-marginBottom30">IPTS</h4>
+                            <h4 class="ct-u-colorMotive ct-fw-600 ct-u-marginBottom30">Performance Tracking</h4>
                             <p class="ct-fw-400 ct-u-relative skrollable skrollable-before" data-bottom="top: 50px;
                                         -moz-opacity: 0;
                                             -khtml-opacity: 0;
