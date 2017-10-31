@@ -170,6 +170,10 @@ public class WebController {
 		logger.info("Welcome on Set Question Paper Page! The client locale is {}.", locale);
 		return "setQuestionPaper";
 	}
-	
-	
+
+	@RequestMapping(value = "/hallOfFame", method = RequestMethod.GET)
+	public String hallOfFame(Locale locale, Model model) {
+		logger.info("Welcome on Hall Of Fame Page! The client locale is {}.", locale);
+		return "hallOfFame";
+	}
 }

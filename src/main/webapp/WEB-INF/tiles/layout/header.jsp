@@ -18,7 +18,7 @@
 				</ul>
 			<li class="dropdown"><a>Results</a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Hall Of Fame</a></li>
+					<li><a href="hallOfFame.do">Hall Of Fame</a></li>
 					<li><a href="#">Testimonials</a></li>
 				</ul></li>
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -199,7 +199,7 @@
 
 						<li class="dropdown"><a>Results</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Hall Of Fame</a></li>
+								<li><a href="hallOfFame.do">Hall Of Fame</a></li>
 								<li><a href="#">Testimonials</a></li>
 							</ul></li>
 						<sec:authorize access="hasRole('ROLE_ADMIN')">

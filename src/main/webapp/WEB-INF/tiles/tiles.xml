@@ -120,5 +120,10 @@
 		<put-attribute name="title" value="Set Question Paper" />
 		<put-attribute name="body" value="/WEB-INF/views/setQuestionPaper.jsp" />
 	</definition>
+
+	<definition name="hallOfFame" extends="base.definition">
+		<put-attribute name="title" value="Hall Of Fame" />
+		<put-attribute name="body" value="/WEB-INF/views/hallOfFame.jsp" />
+	</definition>
 	
 </tiles-definitions>
