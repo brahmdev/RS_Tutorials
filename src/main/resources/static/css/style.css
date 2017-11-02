@@ -9032,6 +9032,31 @@ ul {
   color: #f6faf1;
   border: none;
 }
+
+.ct-personBox--inlineDescription-purple {
+  background-color: #ad53c1;
+  color: #f6faf1;
+  border: none;
+}
+
+.ct-personBox--inlineDescription-blue {
+  background-color: #2b8be9;
+  color: #f6faf1;
+  border: none;
+}
+
+.ct-personBox--inlineDescription-green {
+  background-color: #99cd4d;
+  color: #f6faf1;
+  border: none;
+}
+
+.ct-personBox--inlineDescription-orange {
+  background-color: #ff7f00;
+  color: #f6faf1;
+  border: none;
+}
+
 .ct-personBox--inlineDescription .ct-personMedia {
   padding: 0;
   border: none;

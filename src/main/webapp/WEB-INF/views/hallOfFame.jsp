@@ -27,17 +27,18 @@
             </div>
             <ul class="ct-gallery-filters ct-js-gallery-filters text-uppercase ct-u-doubleBorder">
                 <li><a data-filter="*" class="btn btn-motive active"><span>All</span></a></li>
-                <li><a data-filter=".ssc" class="btn btn-motive"><span>SSC</span></a></li>
-                <li><a data-filter=".hsc" class="btn btn-motive"><span>HSC</span></a></li>
+                <li><a data-filter=".09" class="btn btn-motive"><span style="text-transform:lowercase">09<sup>th</sup></span></a></li>
+                <li><a data-filter=".10" class="btn btn-motive"><span style="text-transform:lowercase">10<sup>th</sup></span></a></li>
+                <li><a data-filter=".11" class="btn btn-motive"><span style="text-transform:lowercase">11<sup>th</sup></span></a></li>
+                <li><a data-filter=".12" class="btn btn-motive"><span style="text-transform:lowercase">12<sup>th</sup></span></a></li>
                 <li><a data-filter=".cet" class="btn btn-motive"><span>MHT-CET</span></a></li>
-                <li><a data-filter=".jee" class="btn btn-motive"><span>JEE</span></a></li>
             </ul>
         </div>
         </div>
         <div id="ct-gallery" class="ct-gallery ct-gallery--col4 ct-js-magnificPortfolioPopupGroup">
 
         <a class="ct-js-magnificPopupImage" href="img/header2.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item hsc">
+            <figure class="ct-gallery-item 10">
                 <img src="img/gallery1.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -87,7 +88,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/header4.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item jee">
+            <figure class="ct-gallery-item 12">
                 <img src="img/gallery3.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -112,7 +113,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/header5.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item jee">
+            <figure class="ct-gallery-item 12">
                 <img src="img/gallery4.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -137,7 +138,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/header6.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item ssc">
+            <figure class="ct-gallery-item 09">
                 <img src="img/gallery5.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -162,7 +163,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/gallery1.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item hsc">
+            <figure class="ct-gallery-item 10">
                 <img src="img/gallery6.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -212,7 +213,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/gallery8.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item ssc">
+            <figure class="ct-gallery-item 09">
                 <img src="img/gallery8.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -262,7 +263,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/gallery10.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item hsc">
+            <figure class="ct-gallery-item 10">
                 <img src="img/gallery10.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -287,7 +288,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/gallery11.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item hsc">
+            <figure class="ct-gallery-item 10">
                 <img src="img/gallery11.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>
@@ -312,7 +313,7 @@
         </a>
 
         <a class="ct-js-magnificPopupImage" href="img/header12.jpg" title="Our Gallery">
-            <figure class="ct-gallery-item jee">
+            <figure class="ct-gallery-item 12">
                 <img src="img/gallery12.jpg" alt="">
                 <figcaption class="ct-u-colorWhite">
                     <h3 class="ct-u-marginBottom30">Project name</h3>

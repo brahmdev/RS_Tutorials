@@ -19,7 +19,7 @@
 			<li class="dropdown"><a>Results</a>
 				<ul class="dropdown-menu">
 					<li><a href="hallOfFame.do">Hall Of Fame</a></li>
-					<li><a href="#">Testimonials</a></li>
+					<li><a href="testimonials.do">Testimonials</a></li>
 				</ul></li>
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
 							<li class="dropdown yamm-fw"><a>Settings</a>
@@ -200,7 +200,7 @@
 						<li class="dropdown"><a>Results</a>
 							<ul class="dropdown-menu">
 								<li><a href="hallOfFame.do">Hall Of Fame</a></li>
-								<li><a href="#">Testimonials</a></li>
+								<li><a href="testimonials.do">Testimonials</a></li>
 							</ul></li>
 						<sec:authorize access="hasRole('ROLE_ADMIN')">
 							<li class="dropdown yamm-fw"><a>Settings</a>

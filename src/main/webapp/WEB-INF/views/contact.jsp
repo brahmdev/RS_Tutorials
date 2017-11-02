@@ -108,7 +108,7 @@ function myMap() {
 var mapOptions = {
     center: new google.maps.LatLng(19.094633, 72.885717),
     zoom: 18,
-    mapTypeId: google.maps.MapTypeId.HYBRID
+    mapTypeId: google.maps.MapTypeId.roadmap
 }
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }

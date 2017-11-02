@@ -35,7 +35,7 @@
 								<div class="ct-personName">
 									<span class="ct-personName--title ct-fw-700"> RAHUL
 										SINGH </span> <span class="ct-personName--meta text-lowercase">
-										senior ui ux designer </span>
+										c </span>
 								</div>
 							</div>
 						</div>
@@ -73,7 +73,7 @@
 								<div class="ct-personName">
 									<span class="ct-personName--title ct-fw-700"> SARVESH
 										PRAJAPATI </span> <span class="ct-personName--meta text-lowercase">
-										senior ui ux designer </span>
+										Founder </span>
 								</div>
 							</div>
 						</div>
@@ -114,7 +114,7 @@
 								<div class="ct-personName">
 									<span class="ct-personName--title ct-fw-700"> BRAHMDEV
 										PANDEY </span> <span class="ct-personName--meta text-lowercase">
-										senior ui ux designer </span>
+										Founder </span>
 								</div>
 							</div>
 						</div>

@@ -48,7 +48,7 @@
 		<div class="mkSpace">
 			<label>Main Color</label>
 			<ul class="demoList clearfix">
-				<li><a href="#" title="Green" data-value="Green"><span
+				<li><a href="#" title="Green" data-value="Green" class="demoActive"><span
 						class="demoColor" style="background: #99cd4d;"></span></a></li>
 				<li><a href="#" data-value="Red"><span class="demoColor"
 						style="background: #ce0000;"></span></a></li>
@@ -56,7 +56,7 @@
 						style="background: #ff7f00;"></span></a></li>
 				<li><a href="#" data-value="Yellow"><span class="demoColor"
 						style="background: #ffd600;"></span></a></li>
-				<li><a href="#" data-value="Purple" class="demoActive"><span
+				<li><a href="#" data-value="Purple"><span
 						class="demoColor" style="background: #ad53c1;"></span></a></li>
 				<li><a href="#" data-value="Sun"><span class="demoColor"
 						style="background: #ffb400;"></span></a></li>

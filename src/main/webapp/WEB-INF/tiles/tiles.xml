@@ -125,5 +125,10 @@
 		<put-attribute name="title" value="Hall Of Fame" />
 		<put-attribute name="body" value="/WEB-INF/views/hallOfFame.jsp" />
 	</definition>
+
+	<definition name="testimonials" extends="base.definition">
+		<put-attribute name="title" value="Testimonials" />
+		<put-attribute name="body" value="/WEB-INF/views/testimonials.jsp" />
+	</definition>
 	
 </tiles-definitions>

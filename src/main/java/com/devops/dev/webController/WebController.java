@@ -176,4 +176,12 @@ public class WebController {
 		logger.info("Welcome on Hall Of Fame Page! The client locale is {}.", locale);
 		return "hallOfFame";
 	}
+
+	@RequestMapping(value = "/testimonials", method = RequestMethod.GET)
+	public String testimonials(Locale locale, Model model) {
+		logger.info("Welcome on Testimonials Page! The client locale is {}.", locale);
+		return "testimonials";
+	}
+
+
 }
