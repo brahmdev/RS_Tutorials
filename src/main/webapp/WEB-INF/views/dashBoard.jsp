@@ -17,7 +17,7 @@
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
 										data-fx="bounceInRight" data-time="400">Teaching is 24 Hours / 7 Days a week job because Teachers never stop caring about their Students</p>
 									<a class="text-uppercase btn btn-primary btn-lg animated"
-										data-fx="bounceInUp" data-time="200" href="course-single.html">view
+										data-fx="bounceInUp" data-time="200" href="courses.do">view
 										courses</a>
 								</div>
 							</div>
@@ -36,10 +36,10 @@
 										data-fx="bounceInDown" data-time="200">Be Simple</h3>
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
 										data-fx="bounceInDown" data-time="400">If you cant Explain it simply, you dont understand it well enough</p>
-									<a href="course-single.html"
+									<a href="courses.do"
 										class="text-uppercase btn btn-primary btn-lg animated"
 										data-fx="bounceInDown" data-time="600">view courses</a> <a
-										href="course-single.html"
+										href="courses.do"
 										class="text-uppercase btn btn-transparent btn-bordered--dark btn-lg animated"
 										data-fx="bounceInDown" data-time="800">take tour</a>
 								</div>
@@ -60,7 +60,7 @@
 									</div>
 									<p class="ct-u-marginBottom40 ct-fw-600 animated"
 										data-fx="fadeInLeft" data-time="800">A good Education is like a saving account; the more you put into it, the richer you are.</p>
-									<a href="course-single.html"
+									<a href="courses.do"
 										class="text-uppercase btn btn-dark btn-lg animated"
 										data-fx="fadeInLeft" data-time="1200">view courses</a>
 								</div>
@@ -221,7 +221,7 @@
 					<div class="row">
 						<div class="col-sm-6 col-md-3">
 							<div class="ct-productBox">
-								<a href="course-single.html">
+								<a href="courses.do">
 									<div class="ct-productImage">
 										<img src="img/sch_science.jpg" alt="Science">
 									</div>
@@ -249,7 +249,7 @@
 						</div>
 						<div class="col-sm-6 col-md-3">
 							<div class="ct-productBox">
-								<a href="course-single.html">
+								<a href="courses.do">
 									<div class="ct-productImage">
 										<img src="img/sch_math.jpg" alt="Maths">
 									</div>
@@ -277,7 +277,7 @@
 						</div>
 						<div class="col-sm-6 col-md-3">
 							<div class="ct-productBox">
-								<a href="course-single.html">
+								<a href="courses.do">
 									<div class="ct-productImage">
 										<img src="img/sch_history_and_geography.jpg" alt="Be Social">
 									</div>
@@ -305,7 +305,7 @@
 						</div>
 						<div class="col-sm-6 col-md-3">
 							<div class="ct-productBox">
-								<a href="course-single.html">
+								<a href="courses.do">
 									<div class="ct-productImage">
 										<img src="img/sch_language.jpg" alt="Languages">
 									</div>

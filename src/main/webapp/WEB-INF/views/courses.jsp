@@ -33,8 +33,8 @@
 													class="fa fa-angle-right"></i>College</a></li>
 											<li><a href="#" id="entrance"><i
 													class="fa fa-angle-right"></i>Entrance Exam</a></li>
-											<li><a href="#" id="it"><i class="fa fa-angle-right"></i>Information
-													Technologies/Computer Science</a></li>
+											<!--<li><a href="#" id="it"><i class="fa fa-angle-right"></i>Information
+													Technologies/Computer Science</a></li>-->
 										</ul>
 									</div>
 								</section>
@@ -388,7 +388,7 @@
 											<a class="collapsed" role="button" data-toggle="collapse"
 												data-parent="#accordion3" href="#collapseNine"
 												aria-expanded="false" aria-controls="collapseNine"> <i
-												class="fa fa-desktop"></i> School Fees Structure
+												class="fa fa-desktop"></i> College Fees Structure
 											</a>
 										</h4>
 									</div>
@@ -455,7 +455,7 @@
 											<a class="collapsed" role="button" data-toggle="collapse"
 												data-parent="#accordion4" href="#collapseEleven"
 												aria-expanded="false" aria-controls="collapseEleven"> <i
-												class="fa fa-desktop"></i> School Fees Structure
+												class="fa fa-desktop"></i> Entrance Exam Fees Structure
 											</a>
 										</h4>
 									</div>
