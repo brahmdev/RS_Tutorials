@@ -19,8 +19,7 @@
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
                             <h3>R.S. Tutorials Login &amp; Register Forms</h3>
-                           
-                            <div class="description">
+                           <div class="description">
                             	<p>
 	                            	 <a class="navbar-brand" href="/"  style="margin-left: 42%;"><img alt="RS Tutorials" src="img/logo.jpg"></a>
                             	</p>
@@ -53,11 +52,11 @@
 				                    <form role="form" action="login" method="post" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" value="dev" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        	<input type="text"  name="username" placeholder="Username..." class="form-username form-control" id="form-username">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" value="dev123" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        	<input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
 				                        </div>
 				                        <input type="hidden" name="${_csrf.parameterName}"
 											value="${_csrf.token}" />

@@ -10,17 +10,17 @@
 			<li class="active"><a href="/">Home</a>
 			<li class="dropdown"><a>Courses</a>
 				<ul class="dropdown-menu">
-					<li><a href="courses.do">Course Detail</a></li>
+					<li><a href="/rs/courses.do">Course Detail</a></li>
 				</ul></li>
 			<li class="dropdown"><a>Admission</a>
 				<ul class="dropdown-menu">
 					<li><a href="admission.do">Admission Process</a></li>
 				</ul>
-			<li class="dropdown"><a>Results</a>
+			<!--<li class="dropdown"><a>Results</a>
 				<ul class="dropdown-menu">
 					<li><a href="hallOfFame.do">Hall Of Fame</a></li>
 					<li><a href="testimonials.do">Testimonials</a></li>
-				</ul></li>
+				</ul></li>-->
 			<sec:authorize access="hasRole('ROLE_ADMIN')">
 							<li class="dropdown yamm-fw"><a>Settings</a>
 								<ul class="dropdown-menu">
@@ -127,9 +127,9 @@
 		</ul>
 	</nav>
 
-	<div id="ct-js-wrapper" class="ct-pageWrapper">
+	<!--<div id="ct-js-wrapper" class="ct-pageWrapper">
 		<div class="ct-navbarMobile">
-			<a class="navbar-brand" href="/" style="margin-left: 14px;"><img
+			<a class="navbar-brand" href="/rs" style="margin-left: 14px;"><img
 				alt="RS Tutorials" src="img/logo.jpg" style="max-height: 70px;"></a>
 			<button type="button" class="navbar-toggle">
 				<span class="sr-only">Toggle navigation</span> <span
@@ -157,9 +157,9 @@
 						<li><a
 							href="https://www.facebook.com/rhlsingh432/?hc_ref=SEARCH&fref=nf"><i
 								class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/createitpl"><i
+						<li><a href="#"><i
 								class="fa fa-twitter"></i></a></li>
-						<li><a href="http://www.createit.pl/"><i
+						<li><a href="#/"><i
 								class="fa fa-wordpress"></i></a></li>
 						<sec:authorize access="isAuthenticated()">
 							<li>
@@ -176,32 +176,32 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
-		</div>
+		</div>-->
 
 		<nav class="navbar navbar-default navbar-fixed-top yamm "
 			data-heighttopbar="60px" data-startnavbar="0">
 			<div class="container">
 				<div class="navbar-header"
 					style="margin-left: 78px; margin-top: 5px;">
-					<a href="/"><img alt="RS Tutorials" src="img/logo.jpg"></a>
+					<a href="/rs"><img alt="RS Tutorials" src="img/logo.jpg"></a>
 				</div>
 				<div class="ct-navbar--fluid pull-right">
 					<ul class="nav navbar-nav ct-navbar--fadeInUp">
 						<li class="dropdown active"><a href="/">Home</a></li>
 						<li class="dropdown"><a>Courses</a>
 							<ul class="dropdown-menu">
-								<li><a href="courses.do">Course Detail</a></li>
+								<li><a href="/rs/courses.do">Course Detail</a></li>
 							</ul></li>
 						<li class="dropdown"><a>Admission</a>
 							<ul class="dropdown-menu">
 								<li><a href="admission.do">Admission Process</a></li>
 							</ul></li>
 
-						<li class="dropdown"><a>Results</a>
+						<!--<li class="dropdown"><a>Results</a>
 							<ul class="dropdown-menu">
 								<li><a href="hallOfFame.do">Hall Of Fame</a></li>
 								<li><a href="testimonials.do">Testimonials</a></li>
-							</ul></li>
+							</ul></li>-->
 						<sec:authorize access="hasRole('ROLE_ADMIN')">
 							<li class="dropdown yamm-fw"><a>Settings</a>
 								<ul class="dropdown-menu">
@@ -328,7 +328,7 @@
 			</div>
 		</div>
 
-		<div class="modal ct-modal ct-js-modal-login fade" tabindex="-1"
+		<!--<div class="modal ct-modal ct-js-modal-login fade" tabindex="-1"
 			role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -372,7 +372,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<div class="modal ct-modal ct-js-modal-signup fade" tabindex="-1"
 			role="dialog" aria-labelledby="myModalLabel">
